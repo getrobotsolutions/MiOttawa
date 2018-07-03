@@ -8,46 +8,84 @@ function LanguageChange(lang)
 {
     if(lang === "english")
     {
-        window.external.ChangeLanguage("en-gb");
+        //window.external.ChangeLanguage("en-gb");
         eraseCookie("CurrentLanguage");
         writeCookie("CurrentLanguage", "English", 30);
         document.getElementById("btn_english").style.backgroundColor = "#ffffff";
         document.getElementById("btn_english").style.color = "#FF6600";
         document.getElementById("btn_spanish").style.backgroundColor = "#FF6600";
         document.getElementById("btn_spanish").style.color = "#ffffff";
+        document.getElementById("btn_chinese").style.backgroundColor = "#FF6600";
+        document.getElementById("btn_chinese").style.color = "#ffffff";
 
-        /*document.getElementById("txt_eat").innerHTML = "Restaurants";
-        document.getElementById("txt_shopping").innerHTML = "Shopping";
-        document.getElementById("txt_take_selfie").innerHTML = "Take Selfie";
-        document.getElementById("txt_robot_avatar").innerHTML = "Robot Avatar";*/
+        document.getElementById("txt_service").innerHTML = "Service Center";
+        document.getElementById("txt_maps").innerHTML = "Maps";
+        document.getElementById("txt_info").innerHTML = "Info";
+        document.getElementById("txt_departments").innerHTML = "Departments";
+        document.getElementById("txt_employement").innerHTML = "Employment";
+        document.getElementById("txt_dog_licensing").innerHTML = "Dog licensing";
         
-        speak[0] = "Enjoy your time at some of our great restaurants.";
-        speak[1] = "Spend some time at some of our shops.";
-        speak[2] = "Please touch the camera icon below and Say Cheese!";
-        speak[3] = "Smile you are about to become a robot.";
+        speak[0] = "Here are some services we provide.";
+        speak[1] = "Find your way around our great building.";
+        speak[2] = "Answers to some commonly asked questions.";
+        speak[3] = "Here is a list of all of our available departments.";
+        speak[4] = "Apply to join one of our teams.";
+        speak[5] = "Register your dog here.";
 
 
     }
     else if (lang === "spanish")
     {
-        window.external.ChangeLanguage("es-us");
+        //window.external.ChangeLanguage("es-us");
         eraseCookie("CurrentLanguage");
         writeCookie("CurrentLanguage", "Spanish", 30);
         document.getElementById("btn_english").style.backgroundColor = "#FF6600";
         document.getElementById("btn_english").style.color = "#ffffff";
         document.getElementById("btn_spanish").style.backgroundColor = "#ffffff";
         document.getElementById("btn_spanish").style.color = "#FF6600";
+        document.getElementById("btn_chinese").style.backgroundColor = "#FF6600";
+        document.getElementById("btn_chinese").style.color = "#ffffff";
 
-        /*document.getElementById("txt_eat").innerHTML = "Restaurante";
-        document.getElementById("txt_shopping").innerHTML = "Compras";
-        document.getElementById("txt_take_selfie").innerHTML = "Tomar Selfie";
-        document.getElementById("txt_robot_avatar").innerHTML = "Robot Avatar";*/
+        document.getElementById("txt_service").innerHTML = "centro de servicio";
+        document.getElementById("txt_maps").innerHTML = "mapas";
+        document.getElementById("txt_info").innerHTML = "información";
+        document.getElementById("txt_departments").innerHTML = "departamentos";
+        document.getElementById("txt_employement").innerHTML = "empleo";
+        document.getElementById("txt_dog_licensing").innerHTML = "licencia de perro";
+
+        speak[0] = "Estos son algunos servicios que brindamos.";
+        speak[1] = "Find your way around our great building.";
+        speak[2] = "Answers to some commonly asked questions.";
+        speak[3] = "Here is a list of all of our available departments.";
+        speak[4] = "Apply to join one of our teams.";
+        speak[5] = "Register your dog here.";
+    }
+    else if (lang === "chinese")
+    {
+        //window.external.ChangeLanguage("es-us");
+        eraseCookie("CurrentLanguage");
+        writeCookie("CurrentLanguage", "Chinese", 30);
+        document.getElementById("btn_english").style.backgroundColor = "#FF6600";
+        document.getElementById("btn_english").style.color = "#ffffff";
+        document.getElementById("btn_spanish").style.backgroundColor = "#FF6600";
+        document.getElementById("btn_spanish").style.color = "#ffffff";
+        document.getElementById("btn_chinese").style.backgroundColor = "#ffffff";
+        document.getElementById("btn_chinese").style.color = "#FF6600";
+
+        document.getElementById("txt_service").innerHTML = "服务中心";
+        document.getElementById("txt_maps").innerHTML = "地图";
+        document.getElementById("txt_info").innerHTML = "信息";
+        document.getElementById("txt_departments").innerHTML = "部门";
+        document.getElementById("txt_employement").innerHTML = "雇用";
+        document.getElementById("txt_dog_licensing").innerHTML = " 狗牌";
 
 
-        speak[0] = "Disfruta de tu tiempo en algunos de nuestros excelentes restaurantes.";
-        speak[1] = "Pase tiempo en algunas de nuestras tiendas.";
-        speak[2] = "Toca el icono de la cámara a continuación y ¡Di queso!";
-        speak[3] = "Sonríe, estás a punto de convertirte en un robot.";
+        speak[0] = "以下是我们提供的一些服务。";
+        speak[1] = "Find your way around our great building.";
+        speak[2] = "Answers to some commonly asked questions.";
+        speak[3] = "Here is a list of all of our available departments.";
+        speak[4] = "Apply to join one of our teams.";
+        speak[5] = "Register your dog here.";
     }
 
 }
@@ -62,16 +100,10 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "Employment":
+           PlaySpeech(speak[4]);
            location.href = "Contents/Employment/index.html";
             break;
-        case "Eats":
-            PlaySpeech(speak[0]);
-            location.href = "Contents/Eat/index.html";
-            break;
-        case "Shopping":
-            PlaySpeech(speak[1]);
-            location.href = "Contents/Shopping/index.html";
-            break;
+        
         case "Selfie":
             PlaySpeech(speak[2]);
             location.href = "Contents/Selfie/index.html";
@@ -80,9 +112,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech(speak[3]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
-        case "Fiesta":
-            location.href = "Contents/Fiesta/index.html";
-            break;
+        
         case "Config":
             location.href = "Config/Config.htm";
             break;
