@@ -99,9 +99,29 @@ function FC_ContentsCall(strContentsName, strLanguage)
         case "Home":
            location.href = "../../maincontents.htm";
             break;
+        case "ServiceCenter":
+            PlaySpeech(speak[0]);
+           location.href = "Contents/ServiceCenter/index.html";
+            break;
+        case "Maps":
+            PlaySpeech(speak[1]);
+           location.href = "Contents/Maps/index.html";
+            break;
+        case "Info":
+            PlaySpeech(speak[3]);
+           location.href = "Contents/Info/index.html";
+            break;
+        case "Departments":
+            PlaySpeech(speak[4]);
+           location.href = "Contents/Departments/index.html";
+            break;
         case "Employment":
-           PlaySpeech(speak[4]);
+           PlaySpeech(speak[5]);
            location.href = "Contents/Employment/index.html";
+            break;
+        case "DogLicensing":
+            PlaySpeech(speak[6]);
+           location.href = "Contents/DogLicensing/index.html";
             break;
         
         case "Selfie":
