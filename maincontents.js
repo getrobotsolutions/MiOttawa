@@ -258,3 +258,14 @@ function getGetOrdinal(n) {
     return n+'<sup>'+(s[(v-20)%10]||s[v]||s[0])+'</sup>';
 }
 
+function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+        
+            window.external.PlaySpeech("Hello, welcome to the Ottawa County Admin Building. Press a button on my screen to begin");
+            
+    }
+    
+}
