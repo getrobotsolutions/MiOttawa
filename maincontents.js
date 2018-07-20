@@ -23,14 +23,14 @@ function LanguageChange(lang)
         document.getElementById("txt_info").innerHTML = "Info";
         document.getElementById("txt_departments").innerHTML = "Departments";
         document.getElementById("txt_employement").innerHTML = "Employment";
-        document.getElementById("txt_dog_licensing").innerHTML = "Dog licensing";
-        
+        document.getElementById("txt_check_in").innerHTML = "Check - In";
+
         speak[0] = "Here are some services we provide.";
         speak[1] = "Find your way around our great building.";
         speak[2] = "Answers to some commonly asked questions.";
         speak[3] = "Here is a list of all of our available departments.";
         speak[4] = "Apply to join one of our teams.";
-        speak[5] = "Register your dog here.";
+        speak[5] = "Check in here.";
 
 
     }
@@ -51,14 +51,14 @@ function LanguageChange(lang)
         document.getElementById("txt_info").innerHTML = "información";
         document.getElementById("txt_departments").innerHTML = "departamentos";
         document.getElementById("txt_employement").innerHTML = "empleo";
-        document.getElementById("txt_dog_licensing").innerHTML = "licencia de perro";
+        document.getElementById("txt_check_in").innerHTML = "registrarse";
 
         speak[0] = "Estos son algunos servicios que brindamos.";
         speak[1] = "Find your way around our great building.";
         speak[2] = "Answers to some commonly asked questions.";
         speak[3] = "Here is a list of all of our available departments.";
         speak[4] = "Apply to join one of our teams.";
-        speak[5] = "Register your dog here.";
+        speak[5] = "Check in here.";
     }
     else if (lang === "chinese")
     {
@@ -77,7 +77,7 @@ function LanguageChange(lang)
         document.getElementById("txt_info").innerHTML = "信息";
         document.getElementById("txt_departments").innerHTML = "部门";
         document.getElementById("txt_employement").innerHTML = "雇用";
-        document.getElementById("txt_dog_licensing").innerHTML = " 狗牌";
+        document.getElementById("txt_check_in").innerHTML = " 报到";
 
 
         speak[0] = "以下是我们提供的一些服务。";
@@ -85,7 +85,7 @@ function LanguageChange(lang)
         speak[2] = "Answers to some commonly asked questions.";
         speak[3] = "Here is a list of all of our available departments.";
         speak[4] = "Apply to join one of our teams.";
-        speak[5] = "Register your dog here.";
+        speak[5] = "Check in here.";
     }
 
 }
@@ -93,7 +93,7 @@ function LanguageChange(lang)
 function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);
-  
+
     switch (strContentsName)
     {
         case "Home":
@@ -119,11 +119,11 @@ function FC_ContentsCall(strContentsName, strLanguage)
            PlaySpeech(speak[4]);
            location.href = "Contents/Employment/index.html";
             break;
-        case "DogLicensing":
+        case "checkin":
             PlaySpeech(speak[5]);
-           location.href = "Contents/DogLicensing/index.html";
+           location.href = "Contents/checkin/index.php";
             break;
-        
+
         case "Selfie":
             PlaySpeech(speak[2]);
             location.href = "Contents/Selfie/index.html";
@@ -132,7 +132,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech(speak[3]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
-        
+
         case "Config":
             location.href = "Config/Config.htm";
             break;
@@ -263,9 +263,9 @@ function OnJoystickControlled(strPara){
 
 
     if(btn_info[0] == '1'){
-        
+
             window.external.PlaySpeech("Hello, welcome to the Ottawa County Admin Building. Press a button on my screen to begin");
-            
+
     }
-    
+
 }

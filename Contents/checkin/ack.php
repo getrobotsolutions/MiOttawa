@@ -1,20 +1,21 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta content="text/html" charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=10"/>
 
-    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
-    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
-    <script src="boots/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
 
-    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/Main.css" rel="stylesheet" type="text/css"/>
 </head>
 
 
@@ -22,7 +23,7 @@
 
 <header>
     <div class="logo">
-        <img onclick="FC_ContentsCall('Config')" src="assets/logo.png">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
 
     <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
@@ -50,50 +51,16 @@
 
 <section class="main-content">
 
+  <div style="text-align: center; color: #FF6600; ">
+    <p style="font-weight: bold; font-size: 50px;"> Thank you </p>
+    <p style="font-weight: bold; font-size: 30px;">We look forward to see you!</p>
+
+    <p style="font-weight: bold; font-size: 30px;">The office is on the first floor.</p>
+  </div>
+
     <div class="main-menu-matrix">
       <!--<img src="assets/Fiesta-logo.png" class="fiesta-icon" onclick="FC_ContentsCall('Fiesta')">-->
-        <table>
-            <tr>
-                <td>
-                    <button onclick="FC_ContentsCall('ServiceCenter')" class="r0c0">
-                        <img src="assets/icons/service.png" width="200" style="width: 200px;"><br>
-                        <a id="txt_service">Service Center</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('Maps')" class="r0c1">
-                    <img src="assets/icons/maps.png"><br>
-                        <a id="txt_maps">Maps</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('Info')" class="r0c1">
-                    <img src="assets/icons/info.png"><br>
-                        <a id="txt_info">Info</a>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="FC_ContentsCall('Departments')" class="r0c2">
-                    <img src="assets/icons/department.png"><br>
-                        <a id="txt_departments">Departments</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('Employment')" class="r1c0">
-                    <img src="assets/icons/employment.png"><br>
-                        <a id="txt_employement">Employment</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('checkin')" class="r0c1">
-                    <!-- <img src="assets/icons/dog-licensing.png"><br> -->
-                        <a id="txt_check_in">Check - in</a>
-                    </button>
-                </td>
-            </tr>
-        </table>
+
     </div>
 
 
@@ -119,21 +86,21 @@
         <div class="carousel-inner " id="slide" role="listbox">
 
           <div class="item active">
-            <img class="fixed-height" src="images/slider/1.png" width="460" height="345">
+            <img class="fixed-height" src="../../images/slider/1.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
               <p></p>
             </div>
           </div>
           <div class="item ">
-            <img class="fixed-height" src="images/slider/2.png" width="460" height="345">
+            <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
               <p></p>
             </div>
           </div>
           <div class="item ">
-            <img class="fixed-height" src="images/slider/3.png" width="460" height="345">
+            <img class="fixed-height" src="../../images/slider/3.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
               <p></p>
@@ -278,7 +245,7 @@
         </div>
     </div>
 
-    <img src="assets/bottom-line.png" onclick="ShowPopup()">
+    <img src="../../assets/bottom-line.png" onclick="ShowPopup()">
 </footer>
 <div id="dialog-overlay"></div>
 <div id="dialog-box">
