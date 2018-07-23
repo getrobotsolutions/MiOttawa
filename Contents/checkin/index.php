@@ -85,6 +85,8 @@ if (isset($_GET['park'])) {
     clerk();
     header("Location: /MiOttawa/Contents/checkin/ack.php");
   }
+  
+  
 
 
  ?>
@@ -92,7 +94,7 @@ if (isset($_GET['park'])) {
 <html>
 <head>
     <meta content="text/html" charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 
     <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
@@ -105,6 +107,13 @@ if (isset($_GET['park'])) {
     <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
 
     <link href="../../css/Main.css" rel="stylesheet" type="text/css"/>
+	
+	<script>
+	function test()
+	{
+		window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?park=true";
+	}
+  </script>
 </head>
 
 
@@ -150,8 +159,8 @@ if (isset($_GET['park'])) {
       <table>
           <tr>
               <td>
-                  <button onclick="index.php?park=true" class="r0c0">
-                      <a id="txt_info" href="index.php?park=true">Park and Recreation</a>
+                  <button onclick="test()" class="r0c0">
+                      <a id="txt_info" >Park and Recreation</a>
                   </button>
               </td>
 
