@@ -85,8 +85,6 @@ if (isset($_GET['park'])) {
     clerk();
     header("Location: /MiOttawa/Contents/checkin/ack.php");
   }
-  
-  
 
 
  ?>
@@ -94,7 +92,7 @@ if (isset($_GET['park'])) {
 <html>
 <head>
     <meta content="text/html" charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    
 
     <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
@@ -109,11 +107,28 @@ if (isset($_GET['park'])) {
     <link href="../../css/Main.css" rel="stylesheet" type="text/css"/>
 	
 	<script>
-	function test()
+	function park()
 	{
-		window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?park=true";
+		  window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?park=true";
 	}
-  </script>
+	
+	function hr()
+	{
+		  window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?hr=true";
+	}
+	
+	function health()
+	{
+		  window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?health=true";
+	}
+	
+	function clerk()
+	{
+		  window.location.href = "http://localhost/MiOttawa/Contents/checkin/index.php?clerk=true";
+	}
+	
+	
+	</script>
 </head>
 
 
@@ -159,27 +174,27 @@ if (isset($_GET['park'])) {
       <table>
           <tr>
               <td>
-                  <button onclick="test()" class="r0c0">
+                  <button onclick="park()" class="r0c0">
                       <a id="txt_info" >Park and Recreation</a>
                   </button>
               </td>
 
               <td>
-                  <button onclick="index.php?hr=true" class="r0c1">
-                      <a id="txt_info" href="index.php?hr=true">Human Resources</a>
+                  <button onclick="hr()" class="r0c1">
+                      <a id="txt_info" >Human Resources</a>
                   </button>
               </td>
           </tr>
           <tr>
               <td>
-                  <button onclick="index.php?health=true" class="r0c2">
-                      <a id="txt_departments" href="index.php?health=true">Department of Public Health</a>
+                  <button onclick="health()" class="r0c2">
+                      <a id="txt_departments" >Department of Public Health</a>
                   </button>
               </td>
 
               <td>
-                  <button onclick="index.php?clerk=true" class="r0c1">
-                      <a id="txt_dog_licensing" href="index.php?clerk=true">County Clerk</a>
+                  <button onclick="clerk()" class="r0c1">
+                      <a id="txt_dog_licensing">County Clerk</a>
                   </button>
               </td>
           </tr>
