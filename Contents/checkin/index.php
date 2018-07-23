@@ -92,6 +92,7 @@ if (isset($_GET['park'])) {
 <html>
 <head>
     <meta content="text/html" charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
     
 
     <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
