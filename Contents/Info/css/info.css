@@ -1,6 +1,7 @@
 .bmg{
 
     height: 1158px;
+    overflow-y: scroll;
 }
 
 .home{
@@ -175,7 +176,7 @@
   -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   
-  background:#eee;
+  background:#e6e6e6;
   /* styling of the dialog box, i have a fixed dimension for this demo */ 
   width:850px; 
   
@@ -194,8 +195,8 @@
   max-height: 1200px;
   overflow: hidden;
   text-align:left; 
-  padding:10px; 
-  margin:13px;
+  padding:40px; 
+  margin:20px;
   color:#666; 
   font-family:arial;
   font-size:11px; 
@@ -216,7 +217,7 @@ a.button {
     font-size: 30px;
   
   /* button color */
-  background-color: #b92c28;
+  background-color: #FF6600;
   
   /* css3 implementation :) */
   /* rounded corner */
@@ -241,26 +242,38 @@ a.button:hover {
 
 /* extra styling */
 #dialog-box .dialog-content p {
-  font-weight:700; margin:0;
+  font-weight:700; margin:0;    font-size: 30px;
 }
 
-#dialog-box .dialog-content ul {
-  margin:10px 0 10px 20px; 
-  padding:0; 
-  height:50px;
-}
-.eat-icon{
-  position: absolute;
-    top: -46px;
-    z-index: 1;
-    width: 150px;
-    right: -10px;
-}
-li.odd{background-color:#F8D7CD;}
-li.even{background-color: #FCECE8;}
-#change-us{color: rgb(255, 255, 255);background: #008a97;padding: 0px 10px;border-radius: 5px;}
 
-p{
 
-  margin: 0 0 0;
+
+
+.question-box{
+  /*width: ;
+  height: 80px;*/
+  background-color: #FF6600;
+  margin-bottom: 10px;
+}
+.question-box .question{
+  color: white;
+  font-size: 32px;
+  padding: 15px;
+}
+.question-box .answer{display: none;}
+.panel-default>.panel-heading{
+  background-color: #FF6600;
+  color: white;
+  font-size: 35px;
+  padding:20px 10px;border-radius: 4px;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+ background-color: #e6e6e6; 
+}
+.panel-title {
+    font-size: 25px;
+}
+.panel-group .panel{
+  margin-bottom: 10px;
+  border-radius: 4px;
 }

@@ -156,11 +156,7 @@ if (isset($_GET['park'])) {
 
 <nav>
 
-    <div class="nav-language">
-        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
-        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
-        <button onclick="LanguageChange('chinese');" id="btn_chinese" class="btn-spanish">中文</button>
-    </div>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
 </nav>
 
 <section class="main-content">

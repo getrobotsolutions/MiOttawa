@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+/*@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');*/
 
 a{
 	color: white;
@@ -62,14 +62,13 @@ nav .nav-language button {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 60%;
-	border-bottom: solid;
-	border-bottom-color: #212121;
+	
 }
 
 .main-content .main-menu-matrix {
 	width: 100%;
 	text-align: center;
-	padding-top: 150px;
+	padding-top: 60px;
 	padding-bottom: 100px;
 }
 
@@ -79,21 +78,18 @@ nav .nav-language button {
 
 .main-menu-matrix table button {
 	margin-bottom: 150px;
-	//background-color:  #0068B3;
 	background-color:  #da662d;
-	width: 250px;
-	height: 250px;
+	width: 320px;
+	height: 330px;
 	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
 	color: #ffffff;
 	font-size: 40px;
 	text-align: center;
-	border: solid;
-	border-color: white;
 }
 
 .main-menu-matrix table button img {
-	width: 140px;
+	width: 190px;
 }
 
 .main-menu-vote{
@@ -344,7 +340,18 @@ a.button {
 }
 
 .home-text{
-	font-size: 40px;
+	font-size: 41px;
 	padding-left: 10px;
 	color: white;
+}
+.title{background-color: #FF6600;
+  color: white;
+  font-size: 35px;
+  width: 800px;
+  padding: 10px;
+  margin: 20px auto;
+  font-weight: bold;
+  text-align: center;
+ 
+
 }

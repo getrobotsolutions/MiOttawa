@@ -62,6 +62,14 @@ $(document).ready(function(){
 
   });
 
+    $("#txt01").click(function () {
+      $('#upper-level').show();
+      $('#lower-level').hide();
+    });
+    $("#txt02").click(function () {
+      $('#lower-level').show();
+      $('#upper-level').hide();
+    });
 });
 
 

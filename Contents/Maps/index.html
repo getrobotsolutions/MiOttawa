@@ -50,29 +50,87 @@
 </nav>
 
 <section class="main-content">
-   <div class="bmg">
-            <div class="wrap" >
-               <ul class="nav nav-tabs" id="myTab">
-                        <li class="active" style="/*border-radius: 4px 4px 20px 0;*/"><a id="txt01" data-target="#i01" data-toggle="tab">First Floor</a></li>
-                        <li class="" style="/*border-radius: 4px 0px 0px 20px;*/"><a id="txt02" data-target="#i02" data-toggle="tab">Seconf Floor</a></li>
-                        <li class="" style="/*border-radius: 4px 20px 0px 0;*/"><a id="txt03" data-target="#i03" data-toggle="tab">Third Floor</a></li>
-                       
-                      </ul>
-
-                      <div class="tab-content">
-                        <div class="tab-pane active" style="text-align: center" id="i01">
-                          <img id="img" src="images/MartireFirstFloor.jpg" onmousedown ="return false">
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i02">
-                          <img id="img" src="images/MartireSecondFloor.jpg" onmousedown ="return false">
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i03">
-                          <img id="img" src="images/MartireThirdFloor.jpg" onmousedown ="return false">
-                        </div>
-                      </div>
-              </div>
+  <div class="bmg">
+    <div class="wrap" >
+      <div class="tab-content">
+        
+        <div class="tab-pane active" style="text-align: center" id="i01">
+          <img id="img" src="images/upper-level-map.png" onmousedown ="return false" width="1015">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i02">
+          <img id="img" src="images/lower-level-map.png" onmousedown ="return false" width="1015">
+        </div>              
       </div>
+      
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="active" style="">
+          <a id="txt01" data-target="#i01" data-toggle="tab">Upper Level</a>
+        </li>
+        <li class="" style="">
+          <a id="txt02" data-target="#i02" data-toggle="tab">Lower Level</a>
+        </li>    
+      </ul>
+    </div>
 
+    <div class="map-content" id="upper-level">
+      <div class="col-sm-6">
+        <ul>
+          <li><img src="images/star.png" width="20">Upper Level Main Entrance</li> 
+          <li><img src="images/blue-circle.png" width="20">Elevator</li>
+          <li>1 Sherif </li>
+          <li>2 Board Room </li>
+          <li>3 County Administrator</li> 
+          <li>4 Conference Room A </li>
+          <li>5 Conference Room B </li>
+          <li>6 Conference Room C </li>
+          <li>7 Interview Room </li>
+          <li>8 HR Conference Room </li>
+          <li>9 Interview Room </li>
+        </ul>
+      </div>
+      <div class="col-sm-6" >
+        <ul>            
+          <li>10 Human Resourcese</li> 
+          <li>11 GIS </li>
+          <li>12 IT</li>
+          <li>13 Conference Room D</li>
+          <li>14 Fiscal Services</li> 
+          <li>15 Corporate Counsel</li>
+          <li>17 Main Conference Room</li>
+          <li>18 Innovation Room</li>
+          <li>19 Planning & Performance Improvement</li>
+          <li>20 Parks & Rec</li>
+          
+        </ul>
+      </div>      
+    </div>
+
+    <div class="map-content" id="lower-level" style="height:415px;display: none;">
+      <div class="col-sm-6">
+        <ul>
+          <li><img src="images/star.png" width="20">Lower Level Main Entrance </li> 
+          <li><img src="images/blue-circle.png" width="20">Elevator</li>
+          <li>1 Water Resource Commissioner </li>
+          <li>2 County Treasurer </li>
+          <li>3 Clerk / Register of Deeds </li> 
+          <li>4 Equilization / Property </li>
+          <li>5 MSU Extension</li>
+          
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li>6 Break Room</li>
+          <li>7 IT Service Desk</li>
+          <li>8 Facilities Manager</li>
+          <li>9 Emergency Management</li>         
+          <li>10 IT Computer Training</li> 
+          <li>11 Conference Room E </li>
+        </ul>
+      </div>      
+    </div>
+
+  </div>
 </section>
 
 
@@ -99,7 +157,7 @@
               <p></p>
             </div>
           </div>
-          <div class="item ">
+         <!-- <div class="item ">
             <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
@@ -120,13 +178,12 @@
               <p></p>
             </div>
           </div>
-       
+       -->
 
         </div>   
     </div>
 
-    <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">
-</footer>
+    </footer>
 <div id="dialog-overlay"></div>
       <div id="dialog-box">
 

@@ -46,15 +46,13 @@ $(document).ready(function(){
       $('#dialog-overlay, #dialog-box').hide();   
       return false;
     });
+   $(".question-box").click(function () {
+    var temp=$(this).children('.answer').text();
+    ShowAnswer(temp);
+   });
 
   $("#btn").click(function () {
     ShowPopup($("#btn").attr('dir'));
-
-    //$("$list1").show();
-
-  });
-  $("#mapBtn").click(function () {
-    ShowPopup($("#mapBtn").attr('dir'));
 
     //$("$list1").show();
 
@@ -65,13 +63,13 @@ $(document).ready(function(){
 
 function ShowPopup(src){
 
-// get the screen height and width  
+  // get the screen height and width  
   var maskHeight = $(document).height();  
   var maskWidth = $(window).width();
   
   // calculate the values for center alignment
-var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
-var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
+  var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
+  var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
   
   // assign values to the overlay and dialog box
   $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
@@ -106,4 +104,20 @@ function ShowPopupARS(src){
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+}
+function ShowAnswer(attr){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><p>"'+ attr +'"<p/></div></div>';
 }

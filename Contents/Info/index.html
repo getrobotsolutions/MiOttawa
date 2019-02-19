@@ -16,7 +16,7 @@
 
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
-  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <link href="css/info.css" rel="stylesheet" type="text/css" />
 
 
 </head>
@@ -26,7 +26,7 @@
 
 <header >
     <div class="logo">
-        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+      <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
     <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
         <div id= 'appcity'>San Antonio, TX</div>
@@ -43,50 +43,951 @@
 
 <nav>
     <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
-    <div class="nav-language">
-        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
-        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
-        <button onclick="LanguageChange('chinese');" id="btn_chinese" class="btn-spanish">中文</button>
-    </div>
 </nav>
 
 <section class="main-content">
-   <div class="bmg">
-    <img src="info.jpeg" width="1080">         <!--<div class="wrap" >
-               <div class="col-sm-5">
-                  <div class="part1" style="">
-                    <div id="leftmenu" >
+  <div class="bmg container">
+    <div class="title"><img src="images/microphone.png" width="60" style="margin-right: 20px;">PRESS TO ASK A QUESTION</div>
 
-                      <h3 id="restau">Restaurants</h3>
-                        <img class="eat-icon" src="images/eat-icon.png">
-
-
-                       <ul id="dynamic-list" class = "listul"></ul>
-
-                    </div>
-                  </div>
+    <div class="panel-group" id="faqAccordion">
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title">Is the Pigeon Creek Lodge open?</h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>
+                      Call the Pigeon Creek Park hotline at 616-738-9531 for up-to-date ski conditions and lodge hours.
+                    </p>
                 </div>
+            </div>
+        </div>
 
-               <div class="col-sm-6">
-                  <div class="part2" id="content">
-                    
-                      <div class="restau-image">
-                        <img id="icon" src="images/default.png" class="icon">
-                      </div>
-                      <div class="bdy">
-                      <div id ="desc">
-                         <p id="HotelName" style="font-weight: bold"> </p>
-                        
-                         <p id="HotelDesc"> </p>
-                      </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                 <h4 class="panel-title">Where can I purchase a motor vehicle parking permit for Ottawa County Parks?</h4>
+            </div>
+            <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>The Parks and Recreation Office</p>
+                </div>
+            </div>
+        </div>
 
-                        <button type="button" id="mapBtn" class="btn btn-offer" dir="images/offers/404.png" style="visibility: hidden">OFFERS</button>
-                      </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                 <h4 class="panel-title">Where can I make a reservation for a park facility?</h4>
+            </div>
+            <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>The Parks Office or go online at miottawa.org/parks</p>
+                </div>
+            </div>
+        </div>
 
-                  </div>
-               </div>
-              </div>-->
-      </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                 <h4 class="panel-title">Where to I go for questions about an invoice?</h4>
+            </div>
+            <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Fiscal Sevices</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+                 <h4 class="panel-title">Where do I turn my RFP (request for proposal) in?</h4>
+            </div>
+            <div id="question5" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Fiscal Sevices</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#6">
+                 <h4 class="panel-title">Corrections and questions about lot /property lines or descriptions</h4>
+            </div>
+            <div id="6" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Equalization</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#7">
+                 <h4 class="panel-title">Where do I go for fingerprints?</h4>
+            </div>
+            <div id="7" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Sheriff's Office</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#8">
+                 <h4 class="panel-title">Where can I get a police report?</h4>
+            </div>
+            <div id="8" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Sheriff's Office</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#9">
+                 <h4 class="panel-title">Where can I pay bond for someone in jail? (for an inmate?)</h4>
+            </div>
+            <div id="9" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>The bond lobby is behind the Jail, 12130 Fillmore Street (across the driveway). Use driveway F, press buzzer at the gate. Drive around back of building to bond lobby. Press buzzer on the door.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#10">
+                 <h4 class="panel-title">Where do I get an accident report?</h4>
+            </div>
+            <div id="10" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Sheriff's Office</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#11">
+                 <h4 class="panel-title">Where do I drop off my gun registration?</h4>
+            </div>
+            <div id="11" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Sheriff's Office</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#12">
+                 <h4 class="panel-title">Where do I go to visit an inmate? (go for a jail visit?)</h4>
+            </div>
+            <div id="12" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Visits occur at the Jail, 12130 Fillmore Street, across the driveway. Parking is available from Driveway D. Check in at the Jail front desk.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#13">
+                 <h4 class="panel-title">Where do I get a background check?</h4>
+            </div>
+            <div id="13" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p>Sheriff's Office</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                 <h4 class="panel-title"></h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--
+    <div class="question-box">
+      <div class="question">Is the Pigeon Creek Lodge open?</div>
+      <div class="answer">Call the Pigeon Creek Park hotline at 616-738-9531 for up-to-date ski conditions and lodge hours.</div>    
+    </div>
+
+    <div class="question-box">
+      <div class="question">Where can I purchase a motor vehicle parking permit for Ottawa County Parks?</div>
+      <div class="answer">The Parks and Recreation Office</div>
+      
+    </div>
+    <div class="question-box">
+      <div class="question">Where can I make a reservation for a park facility?</div>
+      <div class="answer">The Parks Office or go online at miottawa.org/parks</div>
+      
+    </div>
+    <div class="question-box">
+      <div class="question">Where to I go for questions about an invoice?</div>
+      <div class="answer">Fiscal Sevices</div>
+    </div>
+
+    <div class="question-box">
+      <div class="question">Where do I turn my RFP (request for proposal) in?</div>
+      <div class="answer">Fiscal Sevices</div>
+    </div>
+
+    <div class="question-box">
+      <div class="question"></div>
+      <div class="answer"></div>
+    </div>
+
+    -->
+  </div>
 
 </section>
 
@@ -114,7 +1015,7 @@
               <p></p>
             </div>
           </div>
-          <div class="item ">
+         <!-- <div class="item ">
             <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
@@ -128,7 +1029,7 @@
               <p></p>
             </div>
           </div>
-          
+          -->
        
 
         </div>   
@@ -137,9 +1038,8 @@
     <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">
 </footer>
 <div id="dialog-overlay"></div>
-      <div id="dialog-box">
-
-      </div>
+  <div id="dialog-box">
+  </div>
 
 </body>
 <script type="application/javascript">
@@ -153,7 +1053,7 @@
     }
 </script>
 
-<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/info.js"></script>
 <script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
 
 <script language="javascript" type="text/javascript">

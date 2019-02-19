@@ -4,7 +4,7 @@
 var speak = new Array( );
 
 
-function LanguageChange(lang)
+/*function LanguageChange(lang)
 {
     if(lang === "english")
     {
@@ -88,7 +88,7 @@ function LanguageChange(lang)
         speak[5] = "Check in here.";
     }
 
-}
+}*/
 
 function FC_ContentsCall(strContentsName, strLanguage)
 {
@@ -104,12 +104,12 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "Contents/ServiceCenter/index.html";
             break;
         case "Maps":
-            PlaySpeech(speak[1]);
-           location.href = "Contents/Maps/index.html";
+            //PlaySpeech(speak[1]);
+            location.href = "Contents/Maps/index.html";
             break;
         case "Info":
-            PlaySpeech(speak[2]);
-           location.href = "Contents/Info/index.html";
+            //PlaySpeech(speak[2]);
+            location.href = "Contents/Info/index.html";
             break;
         case "Departments":
             PlaySpeech(speak[3]);
