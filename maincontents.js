@@ -100,7 +100,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "ServiceCenter":
-            PlaySpeech(speak[0]);
+           // PlaySpeech(speak[0]);
            location.href = "Contents/ServiceCenter/index.html";
             break;
         case "Maps":
@@ -120,8 +120,8 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "Contents/Employment/index.html";
             break;
         case "checkin":
-            PlaySpeech(speak[5]);
-           location.href = "Contents/checkin/index.php";
+            //PlaySpeech(speak[5]);
+            location.href = "Contents/checkin/index.html";
             break;
 
         case "Selfie":
@@ -144,7 +144,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 
 function OnUserApproached()
 {
-    PlaySpeech("Hi, I'm Erin, thanks for traveling with us.  To get started, please press a button below.");
+    //PlaySpeech("Hi, I'm Erin, thanks for traveling with us.  To get started, please press a button below.");
 }
 
 
@@ -178,27 +178,21 @@ setTimeout(function () {
     ShowTime();
     console.log("Time Showed");
 
-    var city = "Ottawa, IL, USA";
-    var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'";
-    var queryURL = "https://query.yahooapis.com/v1/public/yql?q="+ searchtext + "&format=json";
+    var city = "Ottawa, US";
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a";
 
     $.getJSON(queryURL, function (data) {
 
-        var results = data.query.results;
-        var firstResult = results.channel.item.condition;
-        console.log(firstResult);
+        var temp = data.main.temp-273;
+        var temp=Math.round((temp * (9/5)) + 32);
+        
+        var condition = data.weather[0].main;
+        var loc = 'http://openweathermap.org/img/w/'+ data.weather[0].icon  + '.png' ;
 
+        //$('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+condition);
 
-        var location = 'Unknown'; // not returned in response
-        var temp = firstResult.temp;
-        var text = firstResult.text;
-        var image =  firstResult.code;
-        var loc = 'https://s.yimg.com/zz/combo?a/i/us/we/52/'+image+'.gif' ;
-
-        // $('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+text);
-
-        $('#condition').append(text);
-        $('#temp').append(temp+ '</strong><sup>°F</sup>');
+        $('#condition').text(condition);
+        $('#temp').append(temp + '</strong><sup>°f</sup>');
 
         $('#image-zoom').attr("src",loc);
 

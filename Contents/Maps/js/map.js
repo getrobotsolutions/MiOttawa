@@ -49,8 +49,8 @@ $(document).ready(function(){
       return false;
     });
 
-  $("#btn").click(function () {
-    ShowPopup($("#btn").attr('dir'));
+  $("area").click(function () {
+    ShowMapDetails($(this).attr('title'));
 
     //$("$list1").show();
 
@@ -116,4 +116,20 @@ function ShowPopupARS(src){
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+}
+function ShowMapDetails(attr){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/></div></div>';
 }

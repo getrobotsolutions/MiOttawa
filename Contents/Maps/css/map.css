@@ -10,7 +10,7 @@
 
 }
   .img-home {position: absolute;top: -60px;z-index: 99;height: 62px;cursor: pointer; cursor: hand;}
-  .wrap{padding-top: 20px; height: 785px;}
+  .wrap{padding-top: 20px; height: 800px;}
      .icon{
       width: 550px;
       height: 380px;
@@ -47,7 +47,7 @@
   -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   
-  background:#eee;
+  background:#e6e6e6;
   /* styling of the dialog box, i have a fixed dimension for this demo */ 
   width:850px; 
   
@@ -59,6 +59,8 @@
 
   /* hide it by default */
   display:none;
+  text-align: center;
+
 }
 
 #dialog-box .dialog-content {
@@ -72,10 +74,13 @@
   font-family:arial;
   font-size:11px; 
   float: left;
+  width: 824px;
 }
 
 a.button {
   /* styles for button */
+  position: absolute !important;
+  right: -26px;
   margin:10px auto 0 auto;
   text-align:center;
   display: block;
@@ -88,7 +93,7 @@ a.button {
     font-size: 30px;
   
   /* button color */
-  background-color: #b92c28;
+  background-color: #FF6600;
   
   /* css3 implementation :) */
   /* rounded corner */
@@ -112,8 +117,13 @@ a.button:hover {
 }
 
 /* extra styling */
+#dialog-box #dialog-message{
+  padding:50px;
+}
 #dialog-box .dialog-content p {
+  text-align: center;
   font-weight:700; margin:0;
+  font-size: 40px;
 }
 
 #dialog-box .dialog-content ul {
@@ -131,38 +141,43 @@ p{
 .nav-tabs{
   float: right;
   border: none;
-  margin-top: 5px;
+  margin-top: 10px;
+  position: absolute;
+  right: 10px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #fff;
-    background-color: #f60;
-    border: 1px solid #f60;
+  color: #fff;
+  background-color: #f60;
+  border: 1px solid #f60;
 }
 .nav-tabs>li>a {
   color: black;
         font-size: 40px;
 }
 .tab-content{
-      border: 15px solid #f60;
-    margin: 15px;
+  border: 15px solid #f60;
+  margin: 15px;
 }
 .map-content{
   width: 1060px;
   margin: 0 auto;
   background-color: #f60;
-  min-height: 415px !important;
-  padding: 20px;
+  min-height: 800px !important;
+  padding: 20px 0;
 }
 .main-content {
-    height: 62.5%;
-
-  }
-  .map-content ul{
-    list-style-type: none;    height: 393px;
-  }
-  .map-content ul li{
-    font-size: 23px;color: #fff;
-    margin-bottom: 3px;
-  }
+  height: 62.5%;
+}
+.map-content ul{
+  list-style-type: none;    height: 393px;
+  padding-left: 5px;
+}
+.map-content ul li{
+  font-size: 37px;color: #fff;
+  margin-bottom: 3px;    line-height: 60px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(255,102,0,1);
+  box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
 .carousel-inner {
 }

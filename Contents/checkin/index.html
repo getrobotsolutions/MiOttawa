@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 require 'vendor/autoload.php';
 use Plivo\RestClient;
 
@@ -87,7 +87,7 @@ if (isset($_GET['park'])) {
   }
 
 
- ?>
+ ?>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -130,6 +130,18 @@ if (isset($_GET['park'])) {
 	
 	
 	</script>
+  <style type="text/css">
+    .home-text {
+    font-size: 41px;
+    padding-left: 10px;
+    color: white;
+}.home {
+    float: left;
+    height: 57px;
+    padding-left: 30px;
+}
+  </style>
+
 </head>
 
 
@@ -161,13 +173,10 @@ if (isset($_GET['park'])) {
 
 <section class="main-content">
 
-  <div style="text-align: center; color: #FF6600; ">
-    <p style="font-weight: bold; font-size: 50px;"> Check-in </p>
-    <p style="font-weight: bold; font-size: 30px;">Tell the department head that you're on your way!</p>
-  </div>
-
-    <div class="main-menu-matrix">
-      <!--<img src="assets/Fiesta-logo.png" class="fiesta-icon" onclick="FC_ContentsCall('Fiesta')">-->
+ 
+  <iframe src="http://robotaisolutions.com/robot-work/checkin/" scrolling="no" width="1080" height="1106" allowtransparency="true"></iframe>
+    
+    <!--<div class="main-menu-matrix">
       <table>
           <tr>
               <td>
@@ -196,7 +205,7 @@ if (isset($_GET['park'])) {
               </td>
           </tr>
       </table>
-    </div>
+    </div>-->
 
 
     <!--<div class="concessionaires" >
@@ -227,7 +236,7 @@ if (isset($_GET['park'])) {
               <p></p>
             </div>
           </div>
-          <div class="item ">
+          <!--<div class="item ">
             <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
@@ -241,7 +250,7 @@ if (isset($_GET['park'])) {
               <p></p>
             </div>
           </div>
-          <!--<div class="item ">
+          <div class="item ">
             <img class="fixed-height" src="images/slider/5.png" width="460" height="345">
             <div class="carousel-caption">
               <h3></h3>
@@ -388,24 +397,7 @@ if (isset($_GET['park'])) {
 </div>
 
 <script type="application/javascript">
-    if(readCookie("CurrentLanguage") === "English")
-    {
-        LanguageChange('english');
-    }
-    else if(readCookie("CurrentLanguage") === "Spanish")
-    {
-        LanguageChange('spanish');
-    }
-
-    /*function redirectToSS(){
-    window.location.href = "maincontents.htm";
-}
-var tempTime=setTimeout(redirectToSS,60000);
-
-$(document).click(function(event) {
-    clearTimeout( tempTime );
-    tempTime=setTimeout(redirectToSS,240000);
-});*/
+   
 </script>
 
 </body>
