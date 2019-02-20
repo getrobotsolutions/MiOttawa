@@ -69,7 +69,7 @@ nav .nav-language button {
 .main-content .main-menu-matrix {
 	width: 100%;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 70px;
 	padding-bottom: 100px;
 }
 
@@ -78,15 +78,16 @@ nav .nav-language button {
 }
 
 .main-menu-matrix table button {
-	margin-bottom: 150px;
+	margin-bottom: 90px;
 	background-color:  #FF6600;
-	width: 320px;
-	height: 330px;
+	width: 330px;
+	height: 340px;
 	border: none;
 	
 	color: #ffffff;
-	font-size: 40px;
-	text-align: center;
+	    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .main-menu-matrix table button img {
@@ -353,8 +354,16 @@ a.button {
   margin: 10px auto;
   font-weight: bold;
   text-align: center;
- 
-
+}
+.title-home{
+background-color: #FF6600;
+  color: white;
+  font-size: 41px;
+  width: 1050px;
+  padding: 25px;
+  margin: 10px auto;
+  font-weight: bold;
+  text-align: center;
 }
 iframe{
 	border:none;
