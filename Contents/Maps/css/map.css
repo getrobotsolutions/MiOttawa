@@ -93,7 +93,7 @@ a.button {
     font-size: 30px;
   
   /* button color */
-  background-color: #FF6600;
+  background-color: #da662e;
   
   /* css3 implementation :) */
   /* rounded corner */
@@ -147,21 +147,21 @@ p{
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   color: #fff;
-  background-color: #f60;
-  border: 1px solid #f60;
+  background-color: #da662e;
+  border: 1px solid #da662e;
 }
 .nav-tabs>li>a {
   color: black;
         font-size: 40px;
 }
 .tab-content{
-  border: 15px solid #f60;
+  border: 15px solid #da662e;
   margin: 15px;
 }
 .map-content{
   width: 1060px;
   margin: 0 auto;
-  background-color: #f60;
+  background-color: #da662e;
   min-height: 800px !important;
   padding: 20px 0;
 }
