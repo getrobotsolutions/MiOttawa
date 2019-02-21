@@ -10,7 +10,7 @@ body{
 .home{
     float: left;
     height: 57px;
-    padding-left: 30px;
+    padding-left: 10px;
 
 }
   .img-home {position: absolute;top: -60px;z-index: 99;height: 62px;cursor: pointer; cursor: hand;}

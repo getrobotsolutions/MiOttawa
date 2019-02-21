@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*@import url('https://fonts.googleapis.com/css?family=Orbitron');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');*/
+/*@import url('https://fonts.googleapis.com/css?family=Orbitron');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 a{
 	color: white;
@@ -14,7 +14,7 @@ body{
 	background-repeat: no-repeat;
 	width: 1080px;
 	height: 1920px;
-	//overflow: hidden;
+	overflow: hidden;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #ffffff;
 }
@@ -62,8 +62,8 @@ nav .nav-language button {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 60%;
-	background-color: #dce7ed
-	
+	background-color: #dce7ed;
+	border-bottom: 5px solid #da662e;	
 }
 
 .main-content .main-menu-matrix {
@@ -93,94 +93,9 @@ nav .nav-language button {
 .main-menu-matrix table button img {
 	width: 190px;
 }
-
-.main-menu-vote{
-	padding-top: 30px;
-	width: 100%;
-	height: 400px;
-	text-align: center;
-	//background-color: #fff;
-	//background-color: rgba(255,255,255,0.5);
-}
-
-.main-menu-vote .warning-message {
-	//background-color: #FF6600;
-	background-color: red;
-	height: 350px;
-	animation: random 15s infinite;
-	width: 100%;
-}
-
-@keyframes  random {
-	70% { background-color: white; }
-}
-
-.main-menu-vote .warning-message h1 {
-	animation: random1 15s infinite;
+.main-menu-matrix table button a:hover{
+	text-decoration: none;
 	color: white;
-	font-weight: bold;
-	width: 70%;
-	padding-top: 10px;
-	padding-left: 15px;
-	font-size: 55px;
-	text-align: left;
-	float: left;
-}
-
-@keyframes  random1 {
-	70% { color: red; }
-}
-
-.main-menu-vote .warning-message .img {
-	width:30%;
-	padding: 10px;
-	float: right;
-}
-
-
-
-
-
-.main-menu-vote table {
-	width: 100%;
-	height: 300px;
-}
-
-.main-menu-vote .vote-title {
-	font-size: 60px;
-}
-
-.main-menu-vote table button {
-	background-color: transparent;
-	border: transparent;
-	height: 100%;
-}
-
-.main-menu-vote table button p {
-	margin: -48px 0 10px;
-	font-size: 30px;
-	color: #5cb85c;
-	font-family: 'Orbitron', sans-serif;
-	font-weight: bolder;
-}
-
-.main-menu-vote table button img {
-	width: 200px;
-}
-
-.concessionaires {
-	height: 80px;
-	width: 100%;
-	background-color: #FF6600;
-	margin-top: 25px;
-	text-align: center;
-}
-
-.concessionaires p {
-	padding: 10px;
-	font-size: 40px;
-	font-stretch: ultra-expanded;
-	font-feature-settings: on;
 }
 
 
@@ -197,22 +112,7 @@ footer img {
 
 }
 
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-}
 .slideshow-container {
 max-width: 1000px;
 	height: 100%;
@@ -349,7 +249,7 @@ a.button {
 .title{background-color: #da662e;
   color: white;
   font-size: 35px;
-  width: 900px;
+  width: 850px;
   padding: 30px;
   margin: 10px auto;
   font-weight: bold;

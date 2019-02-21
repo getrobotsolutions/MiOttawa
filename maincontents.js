@@ -112,7 +112,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Info/index.html";
             break;
         case "Departments":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
            location.href = "Contents/Departments/index.html";
             break;
         case "Employment":
@@ -164,8 +164,6 @@ function ShowPopup(){
 }
 
 $(document).ready(function(){
-
-
 
     $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
