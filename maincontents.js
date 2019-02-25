@@ -176,7 +176,7 @@ setTimeout(function () {
     ShowTime();
     console.log("Time Showed");
 
-    /*var city = "Ottawa, US";
+    var city = "Ottawa, US";
     var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a";
 
     $.getJSON(queryURL, function (data) {
@@ -195,7 +195,7 @@ setTimeout(function () {
         $('#image-zoom').attr("src",loc);
 
         console.log("Weather Showed");
-    });*/
+    });
 
 
 
