@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+        <title>Test Communication</title>
+    </head>
+    <body>
+
+
+        <button onclick="sendToServer()">Send</button>
+
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+        <script>
+
+            function sendToServer() {
+
+                var dataKey = 1;
+                console.log("sending Key:" + dataKey);
+
+                $.ajax({
+                    type: "GET",
+                    data: { key: dataKey},
+                    url: "/api/sendresponse"
+                });
+                $.getJSON("http://localhost:3000/api/getresponse", function(data) {
+                    dataKey = data["key"];
+                });
+
+
+            }
+        </script>
+
+
+    </body>
+</html>
