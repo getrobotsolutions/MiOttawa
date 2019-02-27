@@ -91,9 +91,9 @@ var speak = new Array( );
 }*/
     speak[0] = "";
     speak[1] = "Use your cell phone camera to scan the QR code, this way the map will go right to your phone.";
-    speak[2] = "";
-    speak[3] = "";
-    speak[4] = "";
+    speak[2] = "Please touch the screen to scroll through frequently asked questions.";
+    speak[3] = "Click on a department to learn more.";
+    speak[4] = "Press the below button to alert the County Clerk that you are on the way.";
     speak[5] = "";
 
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -114,19 +114,19 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Maps/index.html";
             break;
         case "Info":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/Info/index.html";
             break;
         case "Departments":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[3]);
            location.href = "Contents/Departments/index.html";
             break;
         case "Employment":
-           PlaySpeech(speak[4]);
+           //PlaySpeech(speak[4]);
            location.href = "Contents/Employment/index.html";
             break;
         case "checkin":
-            //PlaySpeech(speak[5]);
+            PlaySpeech(speak[4]);
             location.href = "Contents/checkin/index.html";
             break;
 
@@ -261,7 +261,7 @@ function OnJoystickControlled(strPara){
 
 
     if(btn_info[0] == '1'){
-            window.external.PlaySpeech("Hello, I’m Franchesca, please press a button on my screen to begin.");
+            window.external.PlaySpeech("Hello, I’m Francesca, please press a button on my screen to begin.");
     }
 
     if(btn_info[1] == '1'){
