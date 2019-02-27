@@ -181,3 +181,15 @@ p{
 }
 .carousel-inner {
 }
+.qr-code{
+    position: absolute;
+    top: 810px;
+    left: 40px;
+    font-size: 26px;
+    width: 500px;
+}
+.qr-code span{
+position: absolute;
+    top: 45px;
+    left: 115px;
+}
