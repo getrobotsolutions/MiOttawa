@@ -89,6 +89,12 @@ var speak = new Array( );
     }
 
 }*/
+    speak[0] = "";
+    speak[1] = "Use your cell phone camera to scan the QR code, this way the map will go right to your phone.";
+    speak[2] = "";
+    speak[3] = "";
+    speak[4] = "";
+    speak[5] = "";
 
 function FC_ContentsCall(strContentsName, strLanguage)
 {
@@ -104,7 +110,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "Contents/ServiceCenter/index.html";
             break;
         case "Maps":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Maps/index.html";
             break;
         case "Info":
@@ -255,9 +261,19 @@ function OnJoystickControlled(strPara){
 
 
     if(btn_info[0] == '1'){
+            window.external.PlaySpeech("Hello, I’m Franchesca, please press a button on my screen to begin.");
+    }
 
-            window.external.PlaySpeech("Hello, welcome to the Ottawa County Admin Building. Press a button on my screen to begin");
+    if(btn_info[1] == '1'){
+            window.external.PlaySpeech("I’m new on the job, I’m still learning.  I can’t tell you that answer yet.  Please press the Frequently Asked Questions button for more help.");
+    }
 
+    if(btn_info[2] == '1'){
+            window.external.PlaySpeech("Bye, bye, and have a great day!");
+    }
+
+    if(btn_info[3] == '1'){
+            window.external.PlaySpeech("");
     }
 
 }

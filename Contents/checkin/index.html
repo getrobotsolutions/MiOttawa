@@ -395,7 +395,15 @@ if (isset($_GET['park'])) {
 </div>
 
 <script type="application/javascript">
-   
+   function redirect(){
+    window.location.href = "../../maincontents.htm";
+}
+var initial=setTimeout(redirect,60000);
+
+$(document).click(function(event) {
+    clearTimeout( initial );
+    initial=setTimeout(redirect,60000);
+});
 </script>
 
 </body>
