@@ -11,7 +11,7 @@
     <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
-    <script src="../../boots/js/bootstrap.min.js"></script> 
+    <script src="../../boots/js/bootstrap.min.js"></script>
     
 
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
@@ -45,7 +45,10 @@
 
 <section class="main-content" style="overflow: hidden;height: 1615px;">
   <div class="bmg" style="width: 100%;overflow-y: scroll;padding-right: 17px;box-sizing: content-box;">
-    <div class="title"><img src="images/microphone.png" width="60" style="margin-right: 20px;">PRESS TO ASK A QUESTION</div>
+    <div class="title" id = "txt-robot-talk" onclick="sendToServer()" >
+        <img src="images/microphone.png" width="60" style="margin-right: 20px; ">
+        PRESS TO ASK A QUESTION
+    </div>
 
     <div class="panel-group" id="faqAccordion" style="margin: 0 60px;">
         <div class="panel panel-default ">
@@ -833,6 +836,55 @@ Grand Haven, MI 49417"</p>
 <div id="dialog-overlay"></div>
   <div id="dialog-box">
   </div>
+
+<script>
+
+    function sendToServer() {
+
+
+        dataKey = 1;
+        console.log("sending Key:" + dataKey);
+
+        $.ajax({
+            type: "GET",
+            data: { key: dataKey},
+            url: "/api/sendresponse"
+        });
+
+
+
+    }
+</script>
+
+
+<script>
+
+    setInterval(function(){
+        console.log("check");
+        $.getJSON("http://localhost:3000/api/getresponse", function(data) {
+
+            key = data["key"];
+            console.log(key);
+
+            if(key === "-1")
+            {
+                document.getElementById('txt-robot-talk').innerHTML = 'Listening';
+            }
+            else if (key === "-2")
+            {
+                document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
+            }
+            else if (key !== "1" || key !== "0")
+            {
+                console.log(key);
+                PlaySpeech(key);
+                document.getElementById('txt-robot-talk').innerHTML = 'PRESS TO ASK A QUESTION';
+            }
+        });
+
+    }, 1000);
+
+</script>
 
 </body>
 

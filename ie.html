@@ -17,22 +17,7 @@
 
         <script>
 
-            function sendToServer() {
-
-                var dataKey = 1;
-                console.log("sending Key:" + dataKey);
-
-                $.ajax({
-                    type: "GET",
-                    data: { key: dataKey},
-                    url: "/api/sendresponse"
-                });
-                $.getJSON("http://localhost:3000/api/getresponse", function(data) {
-                    dataKey = data["key"];
-                });
-
-
-            }
+            window.location = "http://localhost:3000/maincontents.htm";
         </script>
 
 

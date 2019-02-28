@@ -47,11 +47,11 @@
     document.getElementById('audio-control').onclick = function () {
 
         //AWS.config.credentials = new AWS.Credentials(document.getElementById('ACCESS_ID').value, document.getElementById('SECRET_KEY').value, null);
-        AWS.config.credentials = new AWS.Credentials('AKIAJGFST3PGRR7LCSFQ','0/PDVQYuVZvfsEpp+kEPbrzOotdMyr35EPUID/5Q', null);
+        AWS.config.credentials = new AWS.Credentials('AKIAIRHUPKH6V6DY2ABA','jlsJgD7QTQwtDwYzc0DJzaYlCEAnTYYIhIAR7W4l', null);
         AWS.config.region = 'us-east-1';
         
         config = {
-            lexConfig: { botName: 'ottawa' }
+            lexConfig: { botName: 'OttawaTwo' }
             //lexConfig: { botName: document.getElementById('BOT').value }
         };
 
@@ -88,32 +88,6 @@
 
             if(key === '1')
             {
-                //AWS.config.credentials = new AWS.Credentials(document.getElementById('ACCESS_ID').value, document.getElementById('SECRET_KEY').value, null);
-                AWS.config.credentials = new AWS.Credentials('AKIAJGFST3PGRR7LCSFQ','0/PDVQYuVZvfsEpp+kEPbrzOotdMyr35EPUID/5Q', null);
-                AWS.config.region = 'us-east-1';
-
-                config = {
-                    lexConfig: { botName: 'ottawa' }
-                    //lexConfig: { botName: document.getElementById('BOT').value }
-                };
-
-                conversation = new LexAudio.conversation(config, function (state) {
-                    message.textContent = state + '...';
-                    if (state === 'Listening') {
-                        waveform.prepCanvas();
-                    }
-                    if (state === 'Sending') {
-                        waveform.clearCanvas();
-                    }
-                }, function (data) {
-                    console.log('Transcript: ', data.inputTranscript, ", Response: ", data.message);
-                }, function (error) {
-                    message.textContent = error;
-                }, function (timeDomain, bufferLength) {
-                    waveform.visualizeAudioBuffer(timeDomain, bufferLength);
-                });
-                conversation.advanceConversation();
-
                 dataKey = 0;
                 console.log("sending Key:" + dataKey);
 
@@ -123,11 +97,60 @@
                     url: "/api/sendresponse"
                 });
 
+                //AWS.config.credentials = new AWS.Credentials(document.getElementById('ACCESS_ID').value, document.getElementById('SECRET_KEY').value, null);
+                AWS.config.credentials = new AWS.Credentials('AKIAIRHUPKH6V6DY2ABA','jlsJgD7QTQwtDwYzc0DJzaYlCEAnTYYIhIAR7W4l', null);
+                AWS.config.region = 'us-east-1';
+
+                config = {
+                    lexConfig: { botName: 'OttawaTwo' }
+                    //lexConfig: { botName: document.getElementById('BOT').value }
+                };
+
+                conversation = new LexAudio.conversation(config, function (state) {
+                    message.textContent = state + '...';
+                    if (state === 'Listening') {
+                        waveform.prepCanvas();
+                        dataKey = -1;
+                        console.log("sending Key:" + dataKey);
+
+                        $.ajax({
+                            type: "GET",
+                            data: { key: dataKey},
+                            url: "/api/sendresponse"
+                        });
+                    }
+                    if (state === 'Sending') {
+                        waveform.clearCanvas();
+                        dataKey = -2;
+                        console.log("sending Key:" + dataKey);
+
+                        $.ajax({
+                            type: "GET",
+                            data: { key: dataKey},
+                            url: "/api/sendresponse"
+                        });
+                    }
+                }, function (data) {
+                    console.log('Transcript: ', data.inputTranscript, ", Response: ", data.message);
+                    key = 0;
+                    dataKey = data.message;
+                    console.log("sending Key:" + dataKey);
+
+                    $.ajax({
+                        type: "GET",
+                        data: { key: dataKey},
+                        url: "/api/sendresponse"
+                    });
+
+                }, function (error) {
+                    message.textContent = error;
+                }, function (timeDomain, bufferLength) {
+                    waveform.visualizeAudioBuffer(timeDomain, bufferLength);
+                });
+                conversation.advanceConversation();
+
 
             }
-
-
-
         })
     }, 1000);
 
