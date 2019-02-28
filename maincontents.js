@@ -175,6 +175,14 @@ $(document).ready(function(){
         $('#dialog-overlay, #dialog-box').hide();
         return false;
     });
+    var doubleTouchStartTimestamp = 0;
+$(document).bind("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
+});
 })
 
 
