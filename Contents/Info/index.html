@@ -874,8 +874,16 @@ Grand Haven, MI 49417"</p>
             {
                 document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
             }
-            else if (key !== "1" || key !== "0")
+            else if (key !== "1" || key !== "0" || key !== "")
             {
+                dataKey = "";
+                console.log("sending Key:" + dataKey);
+
+                $.ajax({
+                    type: "GET",
+                    data: { key: dataKey},
+                    url: "/api/sendresponse"
+                });
                 console.log(key);
                 PlaySpeech(key);
                 document.getElementById('txt-robot-talk').innerHTML = 'PRESS TO ASK A QUESTION';

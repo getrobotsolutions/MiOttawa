@@ -330,7 +330,7 @@ $(document).click(function(event) {
         $.getJSON("http://localhost:3000/api/getresponse", function(data) {
 
             key = data["key"];
-            key2 = data["key2"]
+
             console.log(key);
 
             if(key === "-1")
@@ -341,14 +341,14 @@ $(document).click(function(event) {
             {
                 document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
             }
-            else if (key2 === "-3")
+            else if (key !== "1" || key !== "0" || key !== "")
             {
-                data2 = 0;
+                dataKey = "";
                 console.log("sending Key:" + dataKey);
 
                 $.ajax({
                     type: "GET",
-                    data: { key2: data2},
+                    data: { key: dataKey},
                     url: "/api/sendresponse"
                 });
                 console.log(key);
