@@ -363,7 +363,7 @@
     state.message = state.messages.SPEAKING;
     this.advanceConversation = function() {
       if (state.audioOutput.contentType === 'audio/mpeg') {
-        audioControl.play(state.audioOutput.audioStream, function() {
+        
           if (state.audioOutput.dialogState === 'ReadyForFulfillment' ||
             state.audioOutput.dialogState === 'Fulfilled' ||
             state.audioOutput.dialogState === 'Failed' ||
@@ -373,7 +373,7 @@
             audioControl.startRecording(state.onSilence, state.onAudioData, state.config.silenceDetectionConfig);
             state.transition(new Listening(state));
           }
-        });
+        
       } else {
         state.transition(new Initial(state));
       }

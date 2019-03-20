@@ -316,6 +316,8 @@ $(document).click(function(event) {
             data: { key: dataKey},
             url: "/api/sendresponse"
         });
+		
+		document.getElementById('txt-robot-talk').innerHTML = 'Listening';
 
 
 
@@ -329,21 +331,22 @@ $(document).click(function(event) {
         console.log("check");
         $.getJSON("http://localhost:3000/api/getresponse", function(data) {
 
-            key = data["key"];
+            var key = data["key"];
 
             console.log(key);
 
-            if(key === "-1")
+            /*if(key === "1")
             {
                 document.getElementById('txt-robot-talk').innerHTML = 'Listening';
             }
-            else if (key === "-2")
+            else */
+			if (key === "-2")
             {
                 document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
             }
-            else if (key !== "1" || key !== "0" || key !== "")
+            else if (key !== "1" && key !== "0" && key !== "-5" && key !== "-1")
             {
-                dataKey = "";
+                dataKey = -5;
                 console.log("sending Key:" + dataKey);
 
                 $.ajax({
@@ -351,8 +354,18 @@ $(document).click(function(event) {
                     data: { key: dataKey},
                     url: "/api/sendresponse"
                 });
+				
+								
                 console.log(key);
                 PlaySpeech(key);
+				if (key === "maps")
+				{
+					location.href = "Contents/Maps/index.html";
+				}
+
+				key = "";
+				
+				
                 document.getElementById('txt-robot-talk').innerHTML = 'PRESS TO ASK A QUESTION';
             }
         });
