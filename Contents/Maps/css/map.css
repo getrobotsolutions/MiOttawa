@@ -48,7 +48,7 @@
   
   background:#e6e6e6;
   /* styling of the dialog box, i have a fixed dimension for this demo */ 
-  width:850px; 
+  width:950px; 
   
   
   /* make sure it has the highest z-index */
@@ -73,7 +73,7 @@
   font-family:arial;
   font-size:11px; 
   float: left;
-  width: 824px;
+  width: 924px;
 }
 
 a.button {
@@ -117,7 +117,7 @@ a.button:hover {
 
 /* extra styling */
 #dialog-box #dialog-message{
-  padding:50px;
+  padding:0px;
 }
 #dialog-box .dialog-content p {
   text-align: center;
@@ -183,7 +183,7 @@ p{
 }
 .qr-code{
     position: absolute;
-    top: 810px;
+    top: 1630px;
     left: 40px;
     font-size: 26px;
     width: 500px;

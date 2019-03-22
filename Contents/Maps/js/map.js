@@ -3,7 +3,7 @@
 //-----------------------------------------------------
 
 function redirect(){
-    window.location.href = "../../maincontents.htm";
+    //window.location.href = "../../maincontents.htm";
 }
 var initial=setTimeout(redirect,60000);
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
 
   $("area").click(function () {
-    ShowMapDetails($(this).attr('title'));
+    ShowMapDetails($(this).attr('title'), $(this).attr('src'));
 
     //$("$list1").show();
 
@@ -117,7 +117,7 @@ function ShowPopupARS(src){
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
-function ShowMapDetails(attr){
+function ShowMapDetails(attr, src){
 
 // get the screen height and width
     var maskHeight = $(document).height();
@@ -131,5 +131,5 @@ function ShowMapDetails(attr){
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/></div></div>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/><img src='+src+' width="900"></div></div>';
 }
