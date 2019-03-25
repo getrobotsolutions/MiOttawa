@@ -79,12 +79,7 @@ function ShowPopup(src){
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/offers/404.png"/></div></div>';
   }
   else{
-    if(readCookie("CurrentLanguage") === "English")
-      PlaySpeech("Please take a picture with your phone and show Merchant for your special offer.");
-    else if(readCookie("CurrentLanguage") === "Spanish")
-      PlaySpeech("Por favor, tome una foto con su teléfono y muestre al comerciante su oferta especial.");
-  
-  document.getElementById('dialog-box').innerHTML = '<p style="width:  70%;display:  block;float:  left;font-size: 29px;padding: 20px;">Take Picture and Show merchant</p><a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+  document.getElementById('dialog-box').innerHTML = '<a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
   //$("#dialog-box").append('<div class="dialog-content"><div id="dialog-message">'+ message +'</div><a href="#" class="button">Close</a></div>');
     }
 }
