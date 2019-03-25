@@ -114,7 +114,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Maps/index.html";
             break;
         case "Info":
-            PlaySpeech(speak[2]);
+            //PlaySpeech(speak[2]);
             location.href = "Contents/Info/index.html";
             break;
         case "Departments":
