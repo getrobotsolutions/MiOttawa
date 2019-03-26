@@ -291,7 +291,7 @@ function OnJoystickControlled(strPara){
     }
 
     if(btn_info[2] == '1'){
-            window.external.PlaySpeech("Bye, bye, and have a great day!");
+            window.external.PlaySpeech("Hello, can I help you find your way?");
     }
 
     if(btn_info[3] == '1'){
