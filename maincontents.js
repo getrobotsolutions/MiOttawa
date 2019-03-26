@@ -295,7 +295,7 @@ function OnJoystickControlled(strPara){
     }
 
     if(btn_info[3] == '1'){
-            window.external.PlaySpeech("");
+            window.external.PlaySpeech("Hi, can I help you find your way?  Touch my screen to see maps and help.");
     }
 
 }
