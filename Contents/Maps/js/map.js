@@ -80,7 +80,7 @@ function ShowPopup(src){
   var maskWidth = $(window).width();
   
   // calculate the values for center alignment
-var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
+var dialogTop =  '20%';//(maskHeight/3) - ($('#dialog-box').height());  
 var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
   
   // assign values to the overlay and dialog box
@@ -96,7 +96,7 @@ var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
     else if(readCookie("CurrentLanguage") === "Spanish")
       PlaySpeech("Por favor, tome una foto con su teléfono y muestre al comerciante su oferta especial.");
   
-  document.getElementById('dialog-box').innerHTML = '<p style="width:  70%;display:  block;float:  left;font-size: 29px;padding: 20px;">Take Picture and Show merchant</p><a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+  document.getElementById('dialog-box').innerHTML = '<p style="width:  70%;display:  block;float:  left;font-size: 29px;padding: 20px;">Take Picture and Show merchant</p><a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800"  src="'+ src +'"/></div></div>';
   //$("#dialog-box").append('<div class="dialog-content"><div id="dialog-message">'+ message +'</div><a href="#" class="button">Close</a></div>');
     }
 }
@@ -131,5 +131,5 @@ function ShowMapDetails(attr, src){
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/><img src='+src+' width="900"></div></div>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/><img src='+src+' width="" style="min-width:800px;max-width:900px;max-height:1600px;"></div></div>';
 }

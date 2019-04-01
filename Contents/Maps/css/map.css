@@ -53,7 +53,7 @@
   
   /* make sure it has the highest z-index */
   position:absolute; 
-  top: 20% !important;
+  top: 10% !important;
   z-index:5000; 
 
   /* hide it by default */
@@ -64,7 +64,7 @@
 
 #dialog-box .dialog-content {
   /* style the content */
-  max-height: 1200px;
+  max-height: 1700px;
   overflow: hidden;
   text-align:left; 
   padding:10px; 
@@ -140,7 +140,7 @@ p{
 .nav-tabs{
   float: right;
   border: none;
-  margin-top: 10px;
+  margin-top: 0px;
   position: absolute;
   right: 10px;
 }
@@ -156,6 +156,7 @@ p{
 .tab-content{
   border: 15px solid #da662e;
   margin: 15px;
+  margin-top: 100px;
 }
 .map-content{
   width: 1060px;
@@ -183,13 +184,13 @@ p{
 }
 .qr-code{
     position: absolute;
-    top: 1630px;
+    top: 450px;
     left: 40px;
     font-size: 26px;
     width: 500px;
 }
 .qr-code span{
 position: absolute;
-    top: 45px;
+    top: 37px;
     left: 115px;
 }
