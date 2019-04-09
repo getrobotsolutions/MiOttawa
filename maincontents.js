@@ -92,7 +92,7 @@ var speak = new Array( );
     speak[0] = "";
     speak[1] = "Use your cell phone camera to scan the QR code, this way the map will go right to your phone.";
     speak[2] = "Please touch the screen to scroll through frequently asked questions.";
-    speak[3] = "Click on a department to learn more.";
+    speak[3] = "Click on a Department for map and directions.";
     speak[4] = "Press the below button to alert the County Clerk that you are on the way.";
     speak[5] = "";
 

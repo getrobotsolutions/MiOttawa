@@ -37,6 +37,7 @@ $(document).ready(function(){
   });
 
   $(".department-box").click(function () {
+    PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone and you can take the map with you.");
     ShowMapDetails($(this).children().text(), $(this).attr('name'));
 
     //$("$list1").show();

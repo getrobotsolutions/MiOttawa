@@ -50,6 +50,7 @@ $(document).ready(function(){
     });
 
   $("area").click(function () {
+    PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone and you can take the map with you.");
     ShowMapDetails($(this).attr('title'), $(this).attr('src'));
 
     //$("$list1").show();
