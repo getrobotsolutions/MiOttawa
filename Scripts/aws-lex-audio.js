@@ -323,6 +323,7 @@
   var Initial = function(state) {
     this.state = state;
     state.message = "Tap to ask Question";
+      //document.getElementById("audio-control").disabled = false;
     //state.message = state.messages.PASSIVE;
     this.advanceConversation = function() {
       audioControl.startRecording(state.onSilence, state.onAudioData, state.config.silenceDetectionConfig);
