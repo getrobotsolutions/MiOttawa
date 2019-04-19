@@ -1,1 +1,1 @@
-start chrome http://localhost:3000/html/example/ && node server.js
+start chrome http://localhost:3000/maincontents.htm && node server.js

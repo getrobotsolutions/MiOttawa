@@ -106,6 +106,17 @@ if (isset($_GET['park'])) {
     <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
 
     <link href="../../css/Main.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        dataKey = -1;
+        console.log("sending Key:" + dataKey);
+
+        $.ajax({
+            type: "GET",
+            data: { key: dataKey},
+            url: "/api/sendresponse"
+        });
+    </script>
 	
 	<script>
 	function park()
@@ -152,15 +163,23 @@ if (isset($_GET['park'])) {
         <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
 
-    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
-      <div id="content_air"></div>
-      <div id="content_date" ></div>
-      <span id="temp" ></span>
-      <div>
-        <img id ="image-zoom" style="width: 50px" src="">
-        <span id="condition"></span>
-      </div>
-    </span>
+    <div class="audio-control">
+        <p id="audio-control" class="white-circle">
+            <img src="../../assets/icons/microphone.png">
+            <canvas class="visualizer" style="width: 880px !important; margin-left: 200px !important;"></canvas>
+        </p>
+        <p style="margin-top: -75px; width: 200px"><span id="message" style="color: white; font-size: x-large"></span></p>
+        <p>
+            <!--     <input type="password" id="ACCESS_ID" name="ACCESS ID" placeholder="ACCESS ID" value=""/>
+             </p>
+             <p>
+                 <input type="password" id="SECRET_KEY" name="SECRET KEY" placeholder="SECRET KEY" value=""/>
+             </p>
+             <p>
+                 <input type="text" id="BOT" name="BOT" placeholder="BOT" value=""/>
+            <input id="txtKey" type="text" value="" style="width: 100px;"/> -->
+        </p>
+    </div>
 
 </header>
 
@@ -405,6 +424,17 @@ $(document).click(function(event) {
     initial=setTimeout(redirect,60000);
 });
 </script>
+
+<script
+
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+<script src="../../Scripts/aws-lex-audio.js" type="text/javascript"></script>
+<script src="../../renderer.js" type="text/javascript"></script>
+<script src="../../Scripts/aes.js"></script>
+<script src="../../Scripts/lex.js"></script>
 
 </body>
 </html>

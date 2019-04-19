@@ -97,12 +97,12 @@ function ShowMapDetails( dept_details, map_src){
     var maskWidth = $(window).width();
 
     // calculate the values for center alignment
-    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogTop =  '20%';//(maskHeight/3) - ($('#dialog-box').height());
     var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
 
     // assign values to the overlay and dialog box
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ dept_details +'<p/><img src='+map_src+' width="900"></div></div>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ dept_details +'<p/><img src='+map_src+' width="" style="min-width:500px;max-width:900px;max-height:1700px;"></div></div>';
 }

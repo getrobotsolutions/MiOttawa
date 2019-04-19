@@ -4,279 +4,55 @@
     <meta content="text/html" charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=10"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+        <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
     <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
     <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
-    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
     <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+  
     <script src="boots/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="boots/css/bootstrap.min.css">
-
     <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 
-<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+<body  onbeforeunload="" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;background-color: #dce7ed;" oncontextmenu="return false;" >
 
-<header>
+<!--<header>
     <div class="logo">
         <img onclick="FC_ContentsCall('Config')" src="assets/logo.png">
     </div>
 
-    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
-      <div id="content_air"></div>
-      <div id="content_date" ></div>
-      <span id="temp" ></span>
-      <div>
-        <img id ="image-zoom" style="width: 50px" src="">
-        <span id="condition"></span>
-      </div>
-    </span>
 
-</header>
+    <div class="audio-control">
+        <p id="audio-control" class="white-circle">
+            <img src="assets/icons/microphone.png">
+            <canvas class="visualizer"></canvas>
+        </p>
+        <p style="margin-top: -75px; width: 200px"><span id="message" style="color: white; font-size: x-large"></span></p>
+        <p>
 
-<nav>
-
-</nav>
-
-<section class="main-content">
-
-    <div class="main-menu-matrix">
-      <!--<img src="assets/Fiesta-logo.png" class="fiesta-icon" onclick="FC_ContentsCall('Fiesta')">-->
-      <div class="title-home" id = "txt-robot-talk" onclick="sendToServer()"   style="margin-bottom: 90px;">
-          <img src="assets/icons/microphone.png" width="60" style="margin-right: 20px;">
-          PRESS TO ASK A QUESTION
-      </div>
-        <table>
-            <tr>
-                <!--<td>
-                    <button onclick="FC_ContentsCall('ServiceCenter')" class="r0c0">
-                        <img src="assets/icons/service.png" width="200" style="width: 289px;"><br>
-                        <a id="txt_service">SERVICE CENTER</a>
-                    </button>
-                </td>-->
-                <td>
-                    <button onclick="FC_ContentsCall('Maps')" class="r0c1">
-                    <img src="assets/icons/maps.png"><br>
-                        <a id="txt_maps">MAP</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('Info')" class="r0c1">
-                    <img src="assets/icons/info.png"><br>
-                        <a id="txt_info">FAQ</a>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="FC_ContentsCall('Departments')" class="r0c2">
-                    <img src="assets/icons/department.png"><br>
-                        <a id="txt_departments">DEPARTMENTS</a>
-                    </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('checkin')" class="r1c0">
-                    <img src="assets/icons/checkin.png"><br>
-                        <a id="txt_employement">CHECK IN</a>
-                    </button>
-                </td>
-                <!--<td>
-                    <button onclick="FC_ContentsCall('Events')" class="r0c1">
-                      <img src="assets/icons/events.png"><br>
-                        <a id="txt_check_in">EVENTS</a>
-                    </button>
-                </td>-->
-            </tr>
-        </table>
     </div>
 
+</header>-->
 
-    <!--<div class="concessionaires" >
-        <p>Robot Proudly Funded by SAT's Concessionaires</p>
-    </div>-->
+<!--<nav>
+
+</nav>-->
+
+<section class="" style="text-align: center; padding-top:400px ;width: 1080px; height: 1920px;" onclick="loadContent1()">
+    <h1 style="font-size: 140px;font-weight: bold;color: #da662e">Need Directions?</h1>
+    <p style="font-size: 50px;color: black;margin-bottom: 100px;">TO FIND YOUR WAY</p>
+    <h1 style="font-size: 140px;font-weight: bold;color: #da662e">Have a Question?</h1>
+    <p style="font-size: 50px;color:black ;margin-bottom: 100px">I CAN HELP</p>
+    <h1 style="font-size: 140px;font-weight: bold;color: #e60000">TOUCH MY SCREEN TO BEGIN</h1>
+   
 </section>
 
 <footer>
 
-      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner " id="slide" role="listbox">
-
-          <div class="item active">
-            <img class="fixed-height" src="images/slider/1.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-         <!-- <div class="item ">
-            <img class="fixed-height" src="images/slider/2.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="images/slider/3.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="images/slider/5.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="images/slider/6.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="images/slider/8.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/22.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/55.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/66.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/7.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/9.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/10.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/11.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/12.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/13.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/14.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/19.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item">
-            <img class="fixed-height" src="images/slider/20.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>-->
-
-          <!--<div class="item">-->
-            <!--<img class="fixed-height rotate" src="assets/slide1.png" width="460" height="345">-->
-            <!--<div class="carousel-caption">-->
-              <!--<h3></h3>-->
-              <!--<p></p>-->
-            <!--</div>-->
-          <!--</div>-->
-           <!--<div class="item">-->
-            <!--<img class="fixed-height rotate" src="assets/slide1.png" width="460" height="345">-->
-            <!--<div class="carousel-caption">-->
-              <!--<h3></h3>-->
-              <!--<p></p>-->
-            <!--</div>-->
-          <!--</div> -->
-           <!--<div class="item">-->
-            <!--<img class="fixed-height rotate" src="assets/slide1.png" width="460" height="345">-->
-            <!--<div class="carousel-caption">-->
-              <!--<h3></h3>-->
-              <!--<p></p>-->
-            <!--</div>-->
-          <!--</div> -->
-           <!--<div class="item">-->
-            <!--<img class="fixed-height rotate" src="assets/slide1.png" width="460" height="345">-->
-            <!--<div class="carousel-caption">-->
-              <!--<h3></h3>-->
-              <!--<p></p>-->
-            <!--</div>-->
-          <!--</div>        -->
-
-
-        </div>
-    </div>
-
-    <img src="assets/bottom-line.png" onclick="ShowPopup()">
+  
 </footer>
 <div id="dialog-overlay"></div>
 <div id="dialog-box">
@@ -284,139 +60,36 @@
 </div>
 
 <script type="application/javascript">
-    if(readCookie("CurrentLanguage") === "English")
-    {
-        LanguageChange('english');
+ 
+    function loadContent1() {
+      // body...
+        PlaySpeech("To talk with me, please tap the red button.  For other functions, press the other icons");
+        location.href="main.htm";
+      
     }
-    else if(readCookie("CurrentLanguage") === "Spanish")
-    {
-        LanguageChange('spanish');
+    function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+            window.external.PlaySpeech("Need help finding your way? I can help.  Come here and press the buttons on my screen.");
     }
 
-    /*function redirectToSS(){
-    window.location.href = "maincontents.htm";
+    if(btn_info[1] == '1'){
+            window.external.PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone.");
+    }
+
+    if(btn_info[2] == '1'){
+            window.external.PlaySpeech("");
+    }
+
+    if(btn_info[3] == '1'){
+            window.external.PlaySpeech("Bye, bye.");
+    }
 }
-var tempTime=setTimeout(redirectToSS,60000);
-
-$(document).click(function(event) {
-    clearTimeout( tempTime );
-    tempTime=setTimeout(redirectToSS,240000);
-});*/
-</script>
-<script>
-
-    function sendToServer() {
-
-
-        dataKey = 1;
-        console.log("sending Key:" + dataKey);
-
-        $.ajax({
-            type: "GET",
-            data: { key: dataKey},
-            url: "/api/sendresponse"
-        });
-		
-		document.getElementById('txt-robot-talk').innerHTML = 'Listening';
-
-
-
-    }
-</script>
-
-
-<script>
-
-    setInterval(function(){
-        console.log("check");
-        $.getJSON("http://localhost:3000/api/getresponse", function(data) {
-
-            var key = data["key"];
-
-            console.log(key);
-
-            /*if(key === "1")
-            {
-                document.getElementById('txt-robot-talk').innerHTML = 'Listening';
-            }
-            else */
-			if (key === "-2")
-            {
-                document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
-            }
-            else if (key !== "1" && key !== "0" && key !== "-5" && key !== "-1")
-            {
-                dataKey = -5;
-                console.log("sending Key:" + dataKey);
-
-                $.ajax({
-                    type: "GET",
-                    data: { key: dataKey},
-                    url: "/api/sendresponse"
-                });
-				
-								
-                console.log(key);
-                PlaySpeech(key);
-                if (key === "maps")
-                {
-                    location.href = "http://localhost:3000/Contents/Maps/index.html";
-                }
-                else if (key === "The Parks and Recreation Office")
-                {
-                    ShowPopupMap("images/maps/O-Parks & Recreation.png");
-                }
-                else if ( key === "Fiscal Sevices")
-                {
-                    ShowPopupMap("images/maps/O-Fiscal Services Updated .png")
-                }
-                else if ( key === "Sheriff's Office")
-                {
-                    ShowPopupMap("images/maps/O-Sheriff.png")
-                }
-                else if ( key === "Treasurer's Office")
-                {
-                    ShowPopupMap("images/maps/O-County Treasurer.png")
-                }
-                else if ( key === "GIS")
-                {
-                    ShowPopupMap("images/maps/O-GIS.png")
-                }
-                else if ( key === "Clerk/Register of Deeds office")
-                {
-                    ShowPopupMap("images/maps/o-Register of Deeds.png")
-                }
-                else if ( key === "Visit the Clerk/Register of Deeds office")
-                {
-                    ShowPopupMap("images/maps/o-Register of Deeds.png")
-                }
-                else if ( key === "Human Resources" || key === "Visit miottawa.org/Departments/HR/ or stop by Human Resources" || key === "Stop by Human Resources to check in" || key === "Visit the Employee Portal or Human Resources" || key === "Visit Human Resources")
-                {
-                    ShowPopupMap("images/maps/O-Human Resources.png")
-                }
-                else if ( key === "Locations vary so check with the MSU Extension Office." || key === "Yes. Please go to MSU Extension." || key === "Yes, visit MSU Extension" || key === "Yes at the MSU Extension Office or through the MSU bookstore at bookstore.msue.msu.edu")
-                {
-                    ShowPopupMap("images/maps/O-MSU Extension.png")
-                }
-                else if ( key === "Water Resources Commissioner's Office")
-                {
-                    ShowPopupMap("images/maps/O-Water Resources Commissioner.png")
-                }
-                else if ( key === "Water Resources Commissioner's Office or miottawa.org/Departments/Drain")
-                {
-                    ShowPopupMap("images/maps/O-Water Resources Commissioner.png")
-                }
-
-				key = "";
-				
-				
-                document.getElementById('txt-robot-talk').innerHTML = 'PRESS TO ASK A QUESTION';
-            }
-        });
-
-    }, 1000);
-
 
 </script>
+
+
 </body>
 </html>

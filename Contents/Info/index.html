@@ -17,8 +17,17 @@
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
   <link href="css/info.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        dataKey = -1;
+        console.log("sending Key:" + dataKey);
 
-
+        $.ajax({
+            type: "GET",
+            data: { key: dataKey},
+            url: "/api/sendresponse"
+        });
+    </script>
 </head>
 
 
@@ -28,15 +37,23 @@
     <div class="logo">
       <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
-    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
-      <div id="content_air"></div>
-      <div id="content_date" ></div>
-      <span id="temp" ></span>
-      <div>
-        <img id ="image-zoom" style="width: 50px" src="">
-        <span id="condition"></span>
-      </div>
-    </span>
+    <div class="audio-control">
+        <p id="audio-control" class="white-circle">
+            <img src="../../assets/icons/microphone.png">
+            <canvas class="visualizer" style="width: 880px !important; margin-left: 200px !important;"></canvas>
+        </p>
+        <p style="margin-top: -75px; width: 200px"><span id="message" style="color: white; font-size: x-large"></span></p>
+        <p>
+            <!--     <input type="password" id="ACCESS_ID" name="ACCESS ID" placeholder="ACCESS ID" value=""/>
+             </p>
+             <p>
+                 <input type="password" id="SECRET_KEY" name="SECRET KEY" placeholder="SECRET KEY" value=""/>
+             </p>
+             <p>
+                 <input type="text" id="BOT" name="BOT" placeholder="BOT" value=""/>
+            <input id="txtKey" type="text" value="" style="width: 100px;"/> -->
+        </p>
+    </div>
 </header>
 
 <nav>
@@ -45,10 +62,10 @@
 
 <section class="main-content" style="overflow: hidden;height: 1615px;">
   <div class="bmg" style="width: 100%;overflow-y: scroll;padding-right: 17px;box-sizing: content-box;">
-    <div class="title" id = "txt-robot-talk" onclick="sendToServer()" >
+   <!-- <div class="title" id = "txt-robot-talk" onclick="sendToServer()" >
         <img src="images/microphone.png" width="60" style="margin-right: 20px; ">
         PRESS TO ASK A QUESTION
-    </div>
+    </div>-->
 
     <div class="panel-group" id="faqAccordion" style="margin: 0 60px;">
         <div class="panel panel-default ">
@@ -837,116 +854,16 @@ Grand Haven, MI 49417"</p>
   <div id="dialog-box">
   </div>
 
-<script>
+<script
 
-    function sendToServer() {
-
-
-        dataKey = 1;
-        console.log("sending Key:" + dataKey);
-
-        $.ajax({
-            type: "GET",
-            data: { key: dataKey},
-            url: "/api/sendresponse"
-        });
-		document.getElementById('txt-robot-talk').innerHTML = 'Listening';
-
-
-
-    }
-</script>
-
-
-<script>
-
-    setInterval(function(){
-        console.log("check");
-        $.getJSON("http://localhost:3000/api/getresponse", function(data) {
-
-            var key = data["key"];
-
-            console.log(key);
-
-            /*if(key === "1")
-            {
-                document.getElementById('txt-robot-talk').innerHTML = 'Listening';
-            }
-            else */
-			if (key === "-2")
-            {
-                document.getElementById('txt-robot-talk').innerHTML = 'Speaking';
-            }
-            else if (key !== "1" && key !== "0" && key !== "-5" && key !== "-1")
-            {
-                dataKey = -5;
-                console.log("sending Key:" + dataKey);
-
-                $.ajax({
-                    type: "GET",
-                    data: { key: dataKey},
-                    url: "/api/sendresponse"
-                });
-                console.log(key);
-                PlaySpeech(key);
-				if (key === "maps")
-				{
-					location.href = "http://localhost:3000/Contents/Maps/index.html";
-				}
-				else if (key === "The Parks and Recreation Office")
-                {
-                    ShowPopup("images/maps/O-Parks & Recreation.png");
-                }
-                else if ( key === "Fiscal Sevices")
-                {
-                    ShowPopup("images/maps/O-Fiscal Services Updated .png")
-                }
-                else if ( key === "Sheriff's Office")
-                {
-                    ShowPopup("images/maps/O-Sheriff.png")
-                }
-                else if ( key === "Treasurer's Office")
-                {
-                    ShowPopup("images/maps/O-County Treasurer.png")
-                }
-                else if ( key === "GIS")
-                {
-                    ShowPopup("images/maps/O-GIS.png")
-                }
-                else if ( key === "Clerk/Register of Deeds office")
-                {
-                    ShowPopup("images/maps/o-Register of Deeds.png")
-                }
-                else if ( key === "Visit the Clerk/Register of Deeds office")
-                {
-                    ShowPopup("images/maps/o-Register of Deeds.png")
-                }
-                else if ( key === "Human Resources" || key === "Visit miottawa.org/Departments/HR/ or stop by Human Resources" || key === "Stop by Human Resources to check in" || key === "Visit the Employee Portal or Human Resources" || key === "Visit Human Resources")
-                {
-                    ShowPopup("images/maps/O-Human Resources.png")
-                }
-                else if ( key === "Locations vary so check with the MSU Extension Office." || key === "Yes. Please go to MSU Extension." || key === "Yes, visit MSU Extension" || key === "Yes at the MSU Extension Office or through the MSU bookstore at bookstore.msue.msu.edu")
-                {
-                    ShowPopup("images/maps/O-MSU Extension.png")
-                }
-                else if ( key === "Water Resources Commissioner's Office")
-                {
-                    ShowPopup("images/maps/O-Water Resources Commissioner.png")
-                }
-                else if ( key === "Water Resources Commissioner's Office or miottawa.org/Departments/Drain")
-                {
-                    ShowPopup("images/maps/O-Water Resources Commissioner.png")
-                }
-
-				key = "";
-                document.getElementById('txt-robot-talk').innerHTML = 'PRESS TO ASK A QUESTION';
-            }
-        });
-
-    }, 1000);
-
-
-</script>
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+<script src="../../Scripts/aws-lex-audio.js" type="text/javascript"></script>
+<script src="../../renderer.js" type="text/javascript"></script>
+<script src="../../Scripts/aes.js"></script>
+<script src="../../Scripts/lex.js"></script>
 
 </body>
 

@@ -132,5 +132,5 @@ function ShowMapDetails(attr, src){
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/><img src='+src+' width="" style="min-width:800px;max-width:900px;max-height:1600px;"></div></div>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><p>'+ attr +'<p/><img src='+src+' width="" style="min-width:500px;max-width:900px;max-height:1600px;"></div></div>';
 }

@@ -103,7 +103,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
     switch (strContentsName)
     {
         case "Home":
-           location.href = "../../maincontents.htm";
+           location.href = "../../main.htm";
             break;
         case "ServiceCenter":
            // PlaySpeech(speak[0]);
@@ -235,8 +235,8 @@ function ShowTime()
 {
     var dt = new Date();
     // formatAMPM(dt);
-    document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
-    document.getElementById("content_date") .innerHTML = formatDate(dt);
+    //document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
+    //document.getElementById("content_date") .innerHTML = formatDate(dt);
 
 }
 function formatAMPM(date) {
@@ -283,19 +283,19 @@ function OnJoystickControlled(strPara){
 
 
     if(btn_info[0] == '1'){
-            window.external.PlaySpeech("Hello, I’m Francesca, please press a button on my screen to begin.");
+            window.external.PlaySpeech("Need help finding your way? I can help.  Come here and press the buttons on my screen.");
     }
 
     if(btn_info[1] == '1'){
-            window.external.PlaySpeech("I’m new on the job, I’m still learning.  I can’t tell you that answer yet.  Please press the Frequently Asked Questions button for more help.");
+            window.external.PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone.");
     }
 
     if(btn_info[2] == '1'){
-            window.external.PlaySpeech("Hello, can I help you find your way?");
+            window.external.PlaySpeech("");
     }
 
     if(btn_info[3] == '1'){
-            window.external.PlaySpeech("Hi, can I help you find your way?  Touch my screen to see maps and help.");
+            window.external.PlaySpeech("Bye, bye.");
     }
 
 }

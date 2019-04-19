@@ -1,7 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e928cab2-bad0-4bd8-b550-9fa83139a6d8" name="Default" comment="">
+    <list default="true" id="dc9180fa-0fc8-4031-b570-67958c97090a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Board Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Break Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room D Updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Conference Room F updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Corporate Counsel Updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-County Administrator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-County Treasurer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Emergency Management.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Equalization.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Facilities Maintenance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-First Map One through Six.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-First Map Seven through Eleven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Fiscal Services Updated .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-GIS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Human Resources.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-IT Computer Training.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-IT Service Desk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-IT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Innovation Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Lower Level.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-MSU Extension.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Main Conference Room Final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Parks &amp; Recreation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Planning &amp; Performance Improvement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Sheriff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Upper Floor Final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/O-Water Resources Commissioner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/Departments/images/maps/o-Register of Deeds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Board Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Break Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room D Updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Conference Room F updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Corporate Counsel Updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-County Administrator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-County Treasurer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Emergency Management.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Equalization.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Facilities Maintenance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-First Map One through Six.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-First Map Seven through Eleven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Fiscal Services Updated .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-GIS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Human Resources.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-IT Computer Training.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-IT Service Desk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-IT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Innovation Room.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Lower Level.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-MSU Extension.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Main Conference Room Final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Parks &amp; Recreation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Planning &amp; Performance Improvement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Sheriff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Upper Floor Final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/O-Water Resources Commissioner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/maps/o-Register of Deeds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/checkin/images/microphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/lex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playSpeechServer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SAT-TA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/css/department.css" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/css/department.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/County-Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/County-Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Board-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Board-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Break-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Break-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-B.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-C.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-D.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-D.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-E.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-F.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Conference-Room-F.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Corporate-Counsel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Corporate-Counsel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-County Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-County Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-County-Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-County-Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Emergency-Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Emergency-Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Facilities-Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Facilities-Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-First-Map-One-through-Six.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-First-Map-One-through-Six.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-First-Map-Seven-through-Eleven.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-First-Map-Seven-through-Eleven.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Fiscal-Services-Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Fiscal-Services-Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-GIS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-GIS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Human-Resources.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Human-Resources.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-IT-Computer-Training.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-IT-Computer-Training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-IT-Service-Desk.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-IT-Service-Desk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Innovation-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Innovation-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Lower Level copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Lower Level copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Lower Level.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Lower Level.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-MSU-Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-MSU-Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Main-Conference-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Main-Conference-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Parks-&amp;-Recreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Parks-&amp;-Recreation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Planning-&amp;-Performance-Improvement.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Planning-&amp;-Performance-Improvement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Sheriff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Sheriff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Upper Floor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/O-Water-Resourcesp-Commissioner.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/O-Water-Resourcesp-Commissioner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level-map - Copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level-map - Copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level-map.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level-map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Break-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Break-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Conference-Room-E.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Conference-Room-E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-County-Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-County-Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Emergency-Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Emergency-Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Facilities-Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Facilities-Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-IT-Computer-Training.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-IT-Computer-Training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-IT-Service-Desk.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-IT-Service-Desk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-MSU-Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-MSU-Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Water-Resources-Commissioner.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/O-Water-Resources-Commissioner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/lower-level/o-Register-of-Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/lower-level/o-Register-of-Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/o-Register-of-Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/o-Register-of-Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/upper-level-map - Copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/upper-level-map - Copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/images/upper-level-map.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/images/upper-level-map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Departments/js/department.js" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Departments/js/department.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Board Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Board Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Break Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Break Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room B.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room C.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room D Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room D Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room E.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room F updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Conference Room F updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Corporate Counsel Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Corporate Counsel Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-County Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-County Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-County Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-County Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Emergency Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Emergency Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Facilities Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Facilities Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-First Map One through Six.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-First Map One through Six.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-First Map Seven through Eleven.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-First Map Seven through Eleven.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Fiscal Services Updated .png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Fiscal Services Updated .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-GIS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-GIS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Human Resources.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Human Resources.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT Computer Training.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT Computer Training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT Service Desk.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT Service Desk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Innovation Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Innovation Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Lower Level.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Lower Level.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-MSU Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-MSU Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Main Conference Room Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Main Conference Room Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Parks &amp; Recreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Parks &amp; Recreation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Planning &amp; Performance Improvement.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Planning &amp; Performance Improvement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Sheriff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Sheriff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Upper Floor Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Upper Floor Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/O-Water Resources Commissioner.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/O-Water Resources Commissioner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/images/maps/o-Register of Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/images/maps/o-Register of Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Info/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Info/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/County-Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/County-Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Board-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Board-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-A.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-B.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-C.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-D.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-D.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-F.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Conference-Room-F.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Corporate-Counsel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Corporate-Counsel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-County Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-County Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-County-Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-County-Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Emergency-Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Emergency-Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Facilities-Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Facilities-Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-First-Map-One-through-Six.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-First-Map-One-through-Six.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-First-Map-Seven-through-Eleven.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-First-Map-Seven-through-Eleven.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Fiscal-Services-Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Fiscal-Services-Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-GIS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-GIS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Human-Resources.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Human-Resources.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Innovation-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Innovation-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Lower Level copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Lower Level copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Lower Level.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Lower Level.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-MSU-Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-MSU-Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Main-Conference-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Main-Conference-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Parks-&amp;-Recreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Parks-&amp;-Recreation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Planning-&amp;-Performance-Improvement.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Planning-&amp;-Performance-Improvement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Sheriff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Sheriff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/O-Upper Floor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Break-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Break-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Conference-Room-E.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Conference-Room-E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-County-Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-County-Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Emergency-Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Emergency-Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Facilities-Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Facilities-Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-IT-Computer-Training.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-IT-Computer-Training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-IT-Service-Desk.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-IT-Service-Desk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-MSU-Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-MSU-Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Water-Resources-Commissioner.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/O-Water-Resources-Commissioner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/lower-level/o-Register-of-Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/lower-level/o-Register-of-Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/images/o-Register-of-Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/images/o-Register-of-Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/index - Copy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/index - Copy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Maps/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Maps/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/checkin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/checkin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BaseCommand.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BaseCommand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto.bat" beforeDir="false" afterPath="$PROJECT_DIR$/auto.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ie.html" beforeDir="false" afterPath="$PROJECT_DIR$/ie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Board Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Board Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Break Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Break Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Break-Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Break-Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room A.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room A.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room B.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room B.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room C.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room D Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room D Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room E.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference Room F updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference Room F updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Conference-Room-E.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Conference-Room-E.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Corporate Counsel Updated.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Corporate Counsel Updated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-County Administrator.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-County Administrator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-County Treasurer.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-County Treasurer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Emergency Management.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Emergency Management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Equalization.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Equalization.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Facilities Maintenance.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Facilities Maintenance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-First Map One through Six.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-First Map One through Six.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-First Map Seven through Eleven.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-First Map Seven through Eleven.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Fiscal Services Updated .png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Fiscal Services Updated .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-GIS.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-GIS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Human Resources.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Human Resources.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-IT Computer Training.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-IT Computer Training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-IT Service Desk.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-IT Service Desk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Innovation Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Innovation Room.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Lower Level.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Lower Level.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-MSU Extension.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-MSU Extension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Main Conference Room Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Main Conference Room Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Parks &amp; Recreation.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Parks &amp; Recreation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Planning &amp; Performance Improvement.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Planning &amp; Performance Improvement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Sheriff.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Sheriff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Upper Floor Final.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Upper Floor Final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/O-Water Resources Commissioner.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/O-Water Resources Commissioner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/o-Register of Deeds.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/maps/o-Register of Deeds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maincontents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maincontents.js" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,131 +258,96 @@
     <session id="-492520220">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="htm" value="1" />
-          <entry key="html" value="7" />
-          <entry key="js" value="7" />
-          <entry key="png" value="1" />
+          <entry key="html" value="6" />
+          <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="8" />
-          <entry key="Image" value="1" />
-          <entry key="JavaScript" value="7" />
+          <entry key="HTML" value="7" />
+          <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="htm" value="184" />
-          <entry key="html" value="722" />
-          <entry key="js" value="11" />
+          <entry key="htm" value="87" />
+          <entry key="html" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="906" />
-          <entry key="JavaScript" value="11" />
+          <entry key="HTML" value="146" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Info/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12064">
-              <caret line="54" column="157" selection-start-line="54" selection-start-column="157" selection-end-line="54" selection-end-column="157" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Info/js/info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="81" column="224" selection-start-line="81" selection-start-column="216" selection-end-line="81" selection-end-column="224" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-418" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Maps/js/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-492">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maincontents.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="378" column="32" selection-start-line="378" selection-start-column="32" selection-end-line="378" selection-end-column="32" />
-              <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
-              <caret line="386" column="32" selection-start-line="386" selection-start-column="32" selection-end-line="386" selection-end-column="32" />
-              <caret line="390" column="32" selection-start-line="390" selection-start-column="32" selection-end-line="390" selection-end-column="32" />
-              <caret line="394" column="32" selection-start-line="394" selection-start-column="32" selection-end-line="394" selection-end-column="32" />
-              <caret line="398" column="32" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
-              <caret line="402" column="32" selection-start-line="402" selection-start-column="32" selection-end-line="402" selection-end-column="32" />
-              <caret line="406" column="32" selection-start-line="406" selection-start-column="32" selection-end-line="406" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="346">
+              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+        <entry file="file://$PROJECT_DIR$/Contents/ServiceCenter/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="-96">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maincontents.js">
+        <entry file="file://$PROJECT_DIR$/Contents/checkin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="117" column="55" lean-forward="true" selection-start-line="117" selection-start-column="55" selection-end-line="117" selection-end-column="55" />
+            <state relative-caret-position="638">
+              <caret line="417" column="52" lean-forward="true" selection-start-line="417" selection-start-column="52" selection-end-line="417" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/lex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1605">
+              <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,18 +355,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/Main.css" />
-        <option value="$PROJECT_DIR$/Contents/Eat/js/eat.js" />
-        <option value="$PROJECT_DIR$/html/example/index.html" />
-        <option value="$PROJECT_DIR$/Contents/Info/js/info.js" />
+        <option value="$PROJECT_DIR$/Scripts/lex.js" />
+        <option value="$PROJECT_DIR$/main.htm" />
         <option value="$PROJECT_DIR$/Contents/Info/index.html" />
-        <option value="$PROJECT_DIR$/maincontents.htm" />
-        <option value="$PROJECT_DIR$/maincontents.js" />
+        <option value="$PROJECT_DIR$/Contents/Maps/index.html" />
+        <option value="$PROJECT_DIR$/Contents/Departments/index.html" />
+        <option value="$PROJECT_DIR$/Contents/checkin/index.html" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -168,22 +379,73 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/html/example/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/async-listener/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/continuation-local-storage/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/emitter-listener/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/shimmer/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/html/example/node_modules/vary/package.json" />
       <path value="$PROJECT_DIR$/html/example/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,17 +456,31 @@
             <path>
               <item name="MiOttawa" type="b2602c69:ProjectViewProjectNode" />
               <item name="MiOttawa" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiOttawa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiOttawa" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="checkin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiOttawa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiOttawa" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceCenter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -223,35 +499,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e928cab2-bad0-4bd8-b550-9fa83139a6d8" name="Default" comment="" />
-      <created>1523926130551</created>
+      <changelist id="dc9180fa-0fc8-4031-b570-67958c97090a" name="Default Changelist" comment="" />
+      <created>1555617678676</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1523926130551</updated>
-      <workItem from="1523926132100" duration="1646000" />
-      <workItem from="1523935206409" duration="699000" />
-      <workItem from="1524165332201" duration="604000" />
-      <workItem from="1525989683148" duration="1769000" />
-      <workItem from="1526326491979" duration="518000" />
-      <workItem from="1551110080231" duration="2456000" />
-      <workItem from="1551292843329" duration="7533000" />
-      <workItem from="1551734184400" duration="2109000" />
-      <workItem from="1551988795433" duration="846000" />
-      <workItem from="1553116042468" duration="1601000" />
-      <workItem from="1553524176990" duration="3318000" />
+      <updated>1555617678676</updated>
+      <workItem from="1555617680765" duration="2704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23099000" />
+    <option name="totallyTimeSpent" value="2704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18956336" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16309012" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -259,15 +531,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,146 +544,86 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Config/Config.js.bak">
+    <entry file="file://$PROJECT_DIR$/main.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Config.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Config.htm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/Main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/custom.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Shopping/js/shop.js" />
-    <entry file="file://$PROJECT_DIR$/main.htm" />
-    <entry file="file://$PROJECT_DIR$/Contents/Eat/index.html" />
-    <entry file="file://$PROJECT_DIR$/Contents/Eat/js/eat.js" />
-    <entry file="file://$PROJECT_DIR$/Contents/checkin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/jquery-1.8.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27867">
-          <caret line="415" column="29" selection-start-line="415" selection-start-column="29" selection-end-line="415" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/BaseEvent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/BaseCommand.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="96" column="37" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ie.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/example/index.html" />
-    <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Info/images/contact.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maincontents.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="378" column="32" selection-start-line="378" selection-start-column="32" selection-end-line="378" selection-end-column="32" />
-          <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
-          <caret line="386" column="32" selection-start-line="386" selection-start-column="32" selection-end-line="386" selection-end-column="32" />
-          <caret line="390" column="32" selection-start-line="390" selection-start-column="32" selection-end-line="390" selection-end-column="32" />
-          <caret line="394" column="32" selection-start-line="394" selection-start-column="32" selection-end-line="394" selection-end-column="32" />
-          <caret line="398" column="32" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
-          <caret line="402" column="32" selection-start-line="402" selection-start-column="32" selection-end-line="402" selection-end-column="32" />
-          <caret line="406" column="32" selection-start-line="406" selection-start-column="32" selection-end-line="406" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Maps/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Info/js/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="81" column="224" selection-start-line="81" selection-start-column="216" selection-end-line="81" selection-end-column="224" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="633">
+          <caret line="330" selection-start-line="330" selection-end-line="331" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contents/Info/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12064">
-          <caret line="54" column="157" selection-start-line="54" selection-start-column="157" selection-end-line="54" selection-end-column="157" />
+        <state relative-caret-position="138">
+          <caret line="839" column="34" lean-forward="true" selection-start-line="839" selection-start-column="34" selection-end-line="839" selection-end-column="34" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maincontents.js">
+    <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="117" column="55" lean-forward="true" selection-start-line="117" selection-start-column="55" selection-end-line="117" selection-end-column="55" />
+        <state relative-caret-position="408">
+          <caret line="212" column="63" lean-forward="true" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/Departments/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="205" column="60" lean-forward="true" selection-start-line="205" selection-start-column="60" selection-end-line="205" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/ServiceCenter/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maincontents.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/lex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/checkin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="417" column="52" lean-forward="true" selection-start-line="417" selection-start-column="52" selection-end-line="417" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
