@@ -46,7 +46,7 @@ var flag = false;
             }, function (data) {
                 flag = false;
                 console.log('Transcript: ', data.inputTranscript, ", Response: ", data.message);
-              /*  dataKey = data.message;
+                dataKey = data.message;
                 console.log("sending Key:" + dataKey);
 
                 $.ajax({
@@ -54,7 +54,7 @@ var flag = false;
                     type: "GET",
                     data: {key: dataKey},
                     url: "/api/sendresponse"
-                });*/
+                });
 
                 key = data.message;
 
