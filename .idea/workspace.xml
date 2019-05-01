@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc9180fa-0fc8-4031-b570-67958c97090a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Scripts/lex.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/lex.js" afterDir="false" />
-    </list>
+    <list default="true" id="dc9180fa-0fc8-4031-b570-67958c97090a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="-2337">
               <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -143,7 +141,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/lex.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -250,6 +248,12 @@
             <path>
               <item name="MiOttawa" type="b2602c69:ProjectViewProjectNode" />
               <item name="MiOttawa" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="Maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiOttawa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiOttawa" type="462c0819:PsiDirectoryNode" />
               <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -290,12 +294,12 @@
       <workItem from="1555896514699" duration="974000" />
       <workItem from="1556062272596" duration="3156000" />
       <workItem from="1556572806187" duration="68000" />
-      <workItem from="1556720692926" duration="208000" />
+      <workItem from="1556720692926" duration="362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9321000" />
+    <option name="totallyTimeSpent" value="9475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -417,18 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -466,6 +458,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/Maps/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2337">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#p#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
