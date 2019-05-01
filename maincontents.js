@@ -110,7 +110,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "Contents/ServiceCenter/index.html";
             break;
         case "Maps":
-            PlaySpeech(speak[1]);
+            //PlaySpeech(speak[1]);
             location.href = "Contents/Maps/index.html";
             break;
         case "Info":
@@ -118,7 +118,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Info/index.html";
             break;
         case "Departments":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
            location.href = "Contents/Departments/index.html";
             break;
         case "Employment":
@@ -126,16 +126,16 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "Contents/Employment/index.html";
             break;
         case "checkin":
-            PlaySpeech(speak[4]);
+            //PlaySpeech(speak[4]);
             location.href = "Contents/checkin/index.html";
             break;
 
         case "Selfie":
-            PlaySpeech(speak[2]);
+            //PlaySpeech(speak[2]);
             location.href = "Contents/Selfie/index.html";
             break;
         case "Avatar":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
 
