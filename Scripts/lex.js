@@ -70,7 +70,7 @@ var flag = false;
                 else if (key === "Please go to Fiscal Services. Here's a map that shows you how to get there.") {
                     ShowPopupMap("images/maps/O-Fiscal Services Updated .png");
                 }
-                else if (key === "Please go to Human Resrouces. It's to your right. Here's a map that shows you how to get there.") {
+                else if (key === "Please go to Human Resources. It's to your right. Here's a map that shows you how to get there.") {
                     ShowPopupMap("images/maps/O-Human Resources.png");
                 }
                 else if (key === "I'm sorry, I don't know that answer yet. Please scroll through this screen for your answer.") {
