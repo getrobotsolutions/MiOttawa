@@ -183,10 +183,24 @@ function ShowPopupMap(src){
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
 
+function ShowPopupTele(src){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><iframe src="'+src+'" allow="microphone; camera" style="border:4px solid white; margin: 10px 0 0 120px" frameborder="1" width="580" height="580"></iframe></div>';
+}
+
 $(document).ready(function(){
 
     $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
-        $('#dialog-overlay, #dialog-box').hide();
+        //$('#dialog-overlay, #dialog-box').hide();
         return false;
     });
     var doubleTouchStartTimestamp = 0;
