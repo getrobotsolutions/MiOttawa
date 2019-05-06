@@ -96,7 +96,7 @@
 
 
                         <div class="row">
-                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3"><h2 style="font-size: 40px;color: black">For Directions to an office, or to ask a Question, type i keyword or phrase in box below</h2></div>
 
             <div class="col-lg-9">
                 <div class="input-group">
@@ -105,11 +105,12 @@
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </span>
-                    <input type="search" id="accordion_search_bar" class="form-control" placeholder="Typing in a word like 'legless' will make snake the only accordion row available." value="">
+                    <input type="search" id="accordion_search_bar" class="form-control" placeholder="fingerprints" value="">
                 </div>
                 <!-- /input-group -->
             </div>
             <!-- /.col-lg-6 -->
+            <div class="col-lg-3"><h2 style="font-size: 40px;color: black">Or, scroll through the questions below for map and information</h2></div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-xs-12">
@@ -602,6 +603,12 @@ Grand Haven, MI 49417"</p>
 
 $(function(){
       $('input[type="text"], input[type="email"], input[type="search"]').keyboard({
+        // keep any changes
+        usePreview: true, // disabled for contenteditable
+        autoAccept: true,
+        display: {
+            'accept' : 'Search'
+        },
         layout: 'custom',
         customLayout: {
           'normal': [
@@ -619,8 +626,9 @@ $(function(){
             '{accept} {space} {left} {right} {sp:.2} {del} {toggle}'
           ]
         }
-      })
-     ;
+    });
+
+    
     });
 </script>
 <style type="text/css">
@@ -628,9 +636,21 @@ $(function(){
    
     background-color: #dce7ed;
   }
+  .panel h2{
+    font-weight: bold;
+    text-align: center;
+  }
+  .panel .btn{
+    padding: 18px;
+  }
+  .btn .fa{
+    font-size: 20px;
+  }
   #accordion_search_bar{
     background: white !important;
     color: black;
+        height: 60px;
+    font-size: 35px;
   }
     .panel-title>a{
         color: white;
