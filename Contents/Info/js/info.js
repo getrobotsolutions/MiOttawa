@@ -57,6 +57,13 @@ $(document).ready(function(){
     //$("$list1").show();
 
   });
+  $(".panel-body #map").click(function () {
+    //PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone and you can take the map with you.");
+    ShowMapDetails($(this).attr('src'));
+
+    //$("$list1").show();
+
+  });
 
 });
 
@@ -115,4 +122,20 @@ function ShowAnswer(attr){
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><p>"'+ attr +'"<p/></div></div>';
+}
+function ShowMapDetails(src){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><img src="'+src+'"" width="" style="min-width:500px;max-width:900px;max-height:1600px;"></div></div>';
 }
