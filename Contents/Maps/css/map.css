@@ -92,7 +92,7 @@ a.button {
     font-size: 30px;
   
   /* button color */
-  background-color: #da662e;
+  background-color: #b92c28;
   
   /* css3 implementation :) */
   /* rounded corner */
@@ -118,6 +118,7 @@ a.button:hover {
 /* extra styling */
 #dialog-box #dialog-message{
   padding:0px;
+  text-align: center;
 }
 #dialog-box .dialog-content p {
   text-align: center;

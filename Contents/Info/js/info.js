@@ -37,14 +37,29 @@ function LanguageChange(lang)
 location.reload();
 }
 
+function ShowMapDetails(src){
 
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button" onclick="closePopup()">X</a><div class="dialog-content"><div id="dialog-message"><img src="'+src+'"" width="" style="min-width:500px;max-width:900px;max-height:1600px;"></div></div>';
+}
 
 
 $(document).ready(function(){
 
-   $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {   
-      $('#dialog-overlay, #dialog-box').hide();   
-      return false;
+   $('a.button').click(function () {
+        $('#dialog-overlay, #dialog-box').hide();
+        return false;
     });
    $(".question-box").click(function () {
     var temp=$(this).children('.answer').text();
@@ -122,20 +137,4 @@ function ShowAnswer(attr){
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><p>"'+ attr +'"<p/></div></div>';
-}
-function ShowMapDetails(src){
-
-// get the screen height and width
-    var maskHeight = $(document).height();
-    var maskWidth = $(window).width();
-
-    // calculate the values for center alignment
-    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
-    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
-
-    // assign values to the overlay and dialog box
-    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
-    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">X</a><div class="dialog-content"><div id="dialog-message"><img src="'+src+'"" width="" style="min-width:500px;max-width:900px;max-height:1600px;"></div></div>';
 }

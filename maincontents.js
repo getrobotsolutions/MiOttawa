@@ -180,14 +180,20 @@ function ShowPopupMap(src){
     // assign values to the overlay and dialog box
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button">Close</a><p style="color:black;text-align: center;font-size: 25px;paddin-top:10px;">If you think I'+''+'ve provided you with the wrong answer, please tap SEARCH.</p><a href="#" onclick="" class="search">SEARCH</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
-
+function closePopup(){
+  document.getElementById('dialog-overlay').style.display="none";
+  document.getElementById('dialog-box').style.display="none";
+}
 $(document).ready(function(){
 
-    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
+    $('a.button').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
         return false;
+    });
+    $('a.search').click(function () {
+        window.location = "http://localhost:3000/Contents/Info/index.html";
     });
     var doubleTouchStartTimestamp = 0;
 $(document).bind("touchstart", function(event){
