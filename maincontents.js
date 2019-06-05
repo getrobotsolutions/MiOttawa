@@ -169,7 +169,7 @@ function ShowPopup(){
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="assets/contact.png"/></div></div>';
 }
 
-function ShowPopupMap(src){
+function ShowPopupMap(type){
 
 // get the screen height and width
     var maskHeight = $(document).height();
@@ -180,7 +180,28 @@ function ShowPopupMap(src){
     // assign values to the overlay and dialog box
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-    document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button">Close</a><p style="color:black;text-align: center;font-size: 25px;paddin-top:10px;">If you think I'+''+'ve provided you with the wrong answer, please tap SEARCH.</p><a href="#" onclick="" class="search">SEARCH</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+
+    switch (type) {
+        case 1:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap(2)" >Sherrif s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-County Treasurer.png"/></div></div>';
+            break;
+        case 2:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap(1)" >Treasurer s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Sheriff.png"/></div></div>';
+            break;
+        case 3:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >Sherrif s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/o-Register of Deeds.png"/></div></div>';
+            break;
+        case 4:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >Sherrif s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Fiscal Services Updated .png"/></div></div>';
+            break;
+        case 5:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >Sherrif s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Human Resources.png"/></div></div>';
+            break;
+
+
+    }
+
+    //document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: center;font-size: 25px;padding-top:10px;">Looking for something else?</p><a href="#" onclick="" class="search">SEARCH</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
 function closePopup(){
   document.getElementById('dialog-overlay').style.display="none";
@@ -200,10 +221,10 @@ $(document).bind("touchstart", function(event){
     var now = +(new Date());
     if (doubleTouchStartTimestamp + 500 > now){
         event.preventDefault();
-    };
+    }
     doubleTouchStartTimestamp = now;
 });
-})
+});
 
 
 setTimeout(function () {

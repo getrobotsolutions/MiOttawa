@@ -59,19 +59,19 @@ var flag = false;
                 key = data.message;
 
                 if (key === "Please go to the Treasurer's Office. Here's a map that shows how to get there.") {
-                    ShowPopupMap("images/maps/O-County Treasurer.png");
+                    ShowPopupMap(1);
                 }
                 else if (key === "Please go to the Sheriff's Office. It's to your left.") {
-                    ShowPopupMap("images/maps/O-Sheriff.png");
+                    ShowPopupMap(2);
                 }
                 else if (key === "Please go to the Clerks's Office. Here's a map that shows how to get there.") {
-                    ShowPopupMap("images/maps/o-Register of Deeds.png");
+                    ShowPopupMap(3);
                 }
                 else if (key === "Please go to Fiscal Services. Here's a map that shows you how to get there.") {
-                    ShowPopupMap("images/maps/O-Fiscal Services Updated .png");
+                    ShowPopupMap(4);
                 }
                 else if (key === "Please go to Human Resources. It's to your right. Here's a map that shows you how to get there.") {
-                    ShowPopupMap("images/maps/O-Human Resources.png");
+                    ShowPopupMap(5);
                 }
                 else if (key === "I'm sorry, I don't know that answer yet. Please scroll through this screen for your answer.") {
                     window.location = "http://localhost:3000/Contents/Info/index.html";
