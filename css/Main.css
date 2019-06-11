@@ -88,7 +88,30 @@ nav .nav-language button {
 	    font-size: 42px;
     text-align: center;
     font-weight: bold;
+
+	background: linear-gradient(309deg, #c35822, #da662e, #e08152, #da662e, #c35822);
+	background-size: 800% 800%;
+	-webkit-animation: GradientAnimation 47s ease infinite;
+	-moz-animation: GradientAnimation 47s ease infinite;
+	animation: GradientAnimation 47s ease infinite;
+	//height: 100vh;
+	//width: 100%;
+	overflow: none;
+	position: relative;
 }
+
+@keyframes GradientAnimation {
+	0% {
+		background-position: 0% 46%;
+	}
+	50% {
+		background-position: 100% 55%;
+	}
+	100% {
+		background-position: 0% 46%;
+	}
+}
+
 
 .main-menu-matrix table button img {
 	width: 190px;
