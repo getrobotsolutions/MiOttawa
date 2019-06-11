@@ -89,7 +89,7 @@ nav .nav-language button {
     text-align: center;
     font-weight: bold;
 
-	background: linear-gradient(309deg, #c35822, #da662e, #e49167, #e8a17d, #c35822);
+	background: linear-gradient(309deg, #c35822, #da662e, #e49167, #e8a17d, #da662e, #c35822);
 	background-size: 800% 800%;
 	-webkit-animation: GradientAnimation 47s ease infinite;
 	-moz-animation: GradientAnimation 47s ease infinite;
