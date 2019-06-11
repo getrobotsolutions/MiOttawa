@@ -99,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/css/Main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="185">
-              <caret line="91" column="74" selection-start-line="91" selection-start-column="74" selection-end-line="91" selection-end-column="74" />
+              <caret line="91" column="83" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -281,12 +281,12 @@
       <workItem from="1556062272596" duration="3156000" />
       <workItem from="1556572806187" duration="68000" />
       <workItem from="1556720692926" duration="1352000" />
-      <workItem from="1560268124053" duration="2507000" />
+      <workItem from="1560268124053" duration="2585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23967000" />
+    <option name="totallyTimeSpent" value="24045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -497,7 +497,7 @@
     <entry file="file://$PROJECT_DIR$/css/Main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
-          <caret line="91" column="74" selection-start-line="91" selection-start-column="74" selection-end-line="91" selection-end-column="74" />
+          <caret line="91" column="83" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
         </state>
       </provider>
     </entry>
