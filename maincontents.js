@@ -360,7 +360,8 @@ function readMessage(data) {
 
     //alert(data.val().message);
     PlaySpeech(data.val().message);
-    document.getElementById("speak").innerHTML = data.val().message;
+    //document.getElementById("speak").innerHTML = data.val().message;
+    console.log("Message is: " + data.val().message);
 
 
 
