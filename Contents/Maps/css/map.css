@@ -79,7 +79,7 @@
 a.button {
   /* styles for button */
   position: absolute !important;
-  right: -26px;
+  right: 15px;
   margin:10px auto 0 auto;
   text-align:center;
   display: block;
