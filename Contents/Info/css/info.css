@@ -269,7 +269,7 @@ a.button:hover {
   background-color: #da662e;
   color: white;
   font-size: 35px;
-  padding:20px 10px;border-radius: 4px;
+  /*padding:20px 10px;*/border-radius: 4px;
 }
 .panel-default>.panel-heading+.panel-collapse>.panel-body{
  background-color: #e6e6e6; font-size: 30px;
