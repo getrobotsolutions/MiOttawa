@@ -79,7 +79,8 @@
 a.button {
   /* styles for button */
   position: absolute !important;
-  right: 15px;
+  right: 5px;
+  top: 0;
   margin:10px auto 0 auto;
   text-align:center;
   display: block;
@@ -123,7 +124,7 @@ a.button:hover {
 #dialog-box .dialog-content p {
   text-align: center;
   font-weight:700; margin:0;
-  font-size: 40px;
+  font-size: 39px;
 }
 
 #dialog-box .dialog-content ul {

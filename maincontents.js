@@ -236,8 +236,9 @@ setTimeout(function () {
 
     $.getJSON(queryURL, function (data) {
 
-        var temp = data.main.temp-273;
-        var temp=Math.round((temp * (9/5)) + 32);
+        //var temp = data.main.temp;
+        var temp = Math.round(data.main.temp-273);
+        //var temp=Math.round((temp * (9/5)) + 32);
         
         var condition = data.weather[0].main;
         var loc = 'http://openweathermap.org/img/w/'+ data.weather[0].icon  + '.png' ;
@@ -245,7 +246,7 @@ setTimeout(function () {
         //$('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+condition);
 
         $('#condition').text(condition);
-        $('#temp').append(temp + '</strong><sup>°f</sup>');
+        $('#temp').append(temp + '</strong><sup>°</sup>');
 
         $('#image-zoom').attr("src",loc);
 
@@ -261,9 +262,9 @@ setTimeout(function () {
 function ShowTime()
 {
     var dt = new Date();
-    // formatAMPM(dt);
-    //document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
-    //document.getElementById("content_date") .innerHTML = formatDate(dt);
+    formatAMPM(dt);
+    document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
+    document.getElementById("content_date") .innerHTML = formatDate(dt);
 
 }
 function formatAMPM(date) {
@@ -291,11 +292,12 @@ function formatDate(date){
 
     var m_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    var month = m_names[date.getMonth()];
+    //var month = m_names[date.getMonth()];
+    var month = date.getMonth()+1;
     var day = date.getDate();
-    day = getGetOrdinal(day);
+    //day = getGetOrdinal(day);
 
-    var output = (month<10 ? '0' : '') + month + ' ' +(day<10 ? '0' : '') + day+', '+ date.getFullYear() ;
+    var output = (month<10 ? '0' : '') + month + '/' +(day<10 ? '0' : '') + day+'/'+ date.getFullYear() ;
     return output;
 }
 
