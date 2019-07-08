@@ -187,7 +187,12 @@ if (isset($_GET['park'])) {
 
 <nav>
 
-    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
+   <div class="dateTime">
+      <span id="content_date"></span>
+      <span id="content_air"></span> | <span id="temp"></span>
+      <img src="" id="image-zoom">
+    </div>
+    <div class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</div>
 </nav>
 
 <section class="main-content">
@@ -419,11 +424,11 @@ if (isset($_GET['park'])) {
    function redirect(){
     window.location.href = "../../maincontents.htm";
 }
-var initial=setTimeout(redirect,60000);
+var initial=setTimeout(redirect,75000);
 
 $(document).click(function(event) {
     clearTimeout( initial );
-    initial=setTimeout(redirect,60000);
+    initial=setTimeout(redirect,75000);
 });
 </script>
 
