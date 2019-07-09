@@ -10,146 +10,347 @@
     <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
     <script src="../../boots/js/bootstrap.min.js"></script> 
     
 
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
-  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <link href="css/map.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        dataKey = -1;
+        console.log("sending Key:" + dataKey);
+
+        $.ajax({
+            type: "GET",
+            data: { key: dataKey},
+            url: "/api/sendresponse"
+        });
+        PlaySpeech("Use your cell phone camera to scan the QR code, this way the map will go right to your phone.");
+    </script>
 
 
 </head>
+<body ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
 
-
-<body >
-
-<header >
+  <header>
     <div class="logo">
         <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
-    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
-        
-          <div id="content_air"></div>
-          <div id="content_date" ></div>
-          <span id="condition"></span>
-        <div>
-            <img id ="image-zoom" style="width: 50px" src="">
-             <span id="temp" ></span>
-        </div>
-       
-    </span>
-</header>
+      <div class="audio-control">
+          <p id="audio-control" class="white-circle">
+              <img src="../../assets/icons/microphone.png">
+              <canvas class="visualizer" style="width: 880px !important; margin-left: 200px !important;"></canvas>
+          </p>
+          <p style="margin-top: -75px; width: 200px"><span id="message" style="color: white; font-size: x-large"></span></p>
+          <p>
+              <!--     <input type="password" id="ACCESS_ID" name="ACCESS ID" placeholder="ACCESS ID" value=""/>
+               </p>
+               <p>
+                   <input type="password" id="SECRET_KEY" name="SECRET KEY" placeholder="SECRET KEY" value=""/>
+               </p>
+               <p>
+                   <input type="text" id="BOT" name="BOT" placeholder="BOT" value=""/>
+              <input id="txtKey" type="text" value="" style="width: 100px;"/> -->
+          </p>
+      </div>
+  </header>
 
-<nav>
-    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
+  <nav>
+    <div class="dateTime">
+      <span id="content_date"></span>
+      <span id="content_air"></span> | <span id="temp"></span>
+      <img src="" id="image-zoom">
+    </div>
+    <div class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</div>
     <!--<h2 class="lang-text">Choose a Language</h2>
     <div class="nav-language">
         <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
     </div>-->
-</nav>
+  </nav>
 
-<section class="main-content">
-   <div class="bmg">
-            <div class="wrap" >
-               <ul class="nav nav-tabs" id="myTab">
-                        <li class="active" style="/*border-radius: 4px 4px 20px 0;*/"><a id="txt01" data-target="#i01" data-toggle="tab">First Floor</a></li>
-                        <li class="" style="/*border-radius: 4px 0px 0px 20px;*/"><a id="txt02" data-target="#i02" data-toggle="tab">Seconf Floor</a></li>
-                        <li class="" style="/*border-radius: 4px 20px 0px 0;*/"><a id="txt03" data-target="#i03" data-toggle="tab">Third Floor</a></li>
-                       
-                      </ul>
-
-                      <div class="tab-content">
-                        <div class="tab-pane active" style="text-align: center" id="i01">
-                          <img id="img" src="images/MartireFirstFloor.jpg" onmousedown ="return false">
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i02">
-                          <img id="img" src="images/MartireSecondFloor.jpg" onmousedown ="return false">
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i03">
-                          <img id="img" src="images/MartireThirdFloor.jpg" onmousedown ="return false">
-                        </div>
-                      </div>
+  <section class="main-content">
+    <div class="bmg">
+      <div class="wrap">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active" style="">
+            <a id="txt01" data-target="#i01" data-toggle="tab">Upper Level</a>
+          </li>
+          <li class="" style="">
+            <a id="txt02" data-target="#i02" data-toggle="tab">Lower Level</a>
+          </li>    
+        </ul>
+        <div class="tab-content">
+          <div class="qr-code"><img src="images/qr-code.png" width="100"><span>Use your Smart Phones camera to scan the QR code to receive the map on your phone.</span></div>
+          <div class="tab-pane active" style="text-align: center" id="i01">
+            <!--<img id="img" src="images/upper-level-map.png" onmousedown ="return false" width="1015">-->
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <img src="images/O-Upper-new.png" width="1015" usemap="#image-map2">
+            <map name="image-map2">
+              <area id="1" src="images/O-Sheriff.png" alt="sherif" title="sherif" href="#" coords="239,964,274,965,275,971,288,963,298,975,277,996,278,1042,264,1041,263,1033,254,1027,240,1025" shape="poly">
+              <area src="images/O-Board-Room.png" target="" alt="Board Room" title="Board Room" href="#" coords="192,894,204,893,210,888,295,887,306,899,306,910,299,908,298,927,300,933,306,936,304,945,290,960,278,964,228,964,228,957,192,957" shape="poly">
+              <area src="images/County-Administrator.png" target="" alt="County Administrator" title="County Administrator" href="#" coords="174,843,190,843,190,872,217,872,221,865,227,863,229,859,269,858,267,774,293,774,272,753,236,724,209,725,210,790,175,790" shape="poly">
+              <area src="images/O-Conference-Room-A.png" target="" alt="Conference Room A" title="Conference Room A" href="#" coords="315,799,365,799,365,770,311,769,311,783,316,789" shape="poly">
+              <area src="images/O-Conference-Room-B.png" alt="Conference Room B" title="Conference Room B" href="#" coords="310,799,367,800,367,828,314,828,318,820,310,813" shape="poly">
+              <area src="images/O-Conference-Room-C.png" alt="Conference Room C" title="Conference Room C" href="#" coords="367,769,403,769,404,811,395,820,396,829,368,828" shape="poly">
+              <area src="images/O-Human-Resources.png" alt="Human Resources" title="Human Resources" href="#" coords="418,830,470,830,470,838,542,839,542,922,391,923,389,893,419,864" shape="poly">
+              <area src="images/O-GIS.png" alt="GIS" title="GIS" href="#" coords="419,756,434,742,467,741,466,778,419,779" shape="poly">
+              <area src="images/O-IT.png" alt="IT" title="IT" href="#" coords="445,630,541,630,542,838,472,838,471,810,465,812,465,790,452,790,452,777,468,778,468,740,446,739,446,644,453,638" shape="poly">
+              <area src="images/O-Conference-Room-D.png" alt="Conference Room D" title="Conference Room D" href="#" coords="389,662,430,663,429,720,389,720" shape="poly">
+              <area src="images/O-Fiscal-Services-Updated.png" alt="Fiscal Services" title="Fiscal Services" href="#" coords="237,648,299,647,301,550,385,549,386,607,405,632,386,633,387,654,422,653,423,662,387,664,388,721,422,721,417,727,418,732,399,753,346,753,347,719,308,719,273,752,236,725,237,684" shape="poly">
+              <area src="images/O-Corporate-Counsel.png" alt="Corporate Counsel" title="Corporate Counsel" href="#" coords="208,649,237,649,236,723,210,723" shape="poly">
+              <area src="images/O-Conference-Room-F.png" alt="Conference Room F" title="Conference Room F" href="#" coords="452,554,452,560,452,566,446,569,447,616,486,616,486,555" shape="poly">
+              <area src="images/O-Main-Conference-Room.png" alt="Main Conference Room" title="Main Conference Room" href="#" coords="445,414,570,414,570,553,446,552,446,539,453,531,453,524,462,524,464,490,448,489,446,478,445,449,453,446,454,437,445,430" shape="poly">
+              <area src="images/O-Innovation-Room.png" alt="Innovation Room" title="Innovation Room" href="#" coords="345,466,429,466,429,541,412,541,412,548,345,549" shape="poly">
+              <area src="images/O-Planning-&-Performance-Improvement.png" alt="Planning and Performance improvement" title="Planning and Performance improvement" href="#" coords="343,322,429,322,430,437,344,439" shape="poly">
+              <area src="images/O-Parks-&-Recreation.png" alt="Parks &amp; Recreation" title="Parks &amp; Recreation" href="#" coords="491,296,569,297,569,413,445,413,445,394,452,385,446,377,445,339,492,338" shape="poly">
+              <!--<area src="images/" alt="Stairs to Lower Level" title="Stairs to Lower Level" href="#" coords="324,970,330,969,346,967,346,1011,323,1011" shape="poly">
+              <area src="images/" alt="Stairs to Lower Level" title="Stairs to Lower Level" href="#" coords="149,844,183,846,183,865,149,865" shape="poly">
+              <area src="images/" alt="Stairs to Lower Level" title="Stairs to Lower Level" href="#" coords="387,634,429,634,429,651,388,651" shape="poly">
+              <area src="images/" alt="Stairs to Lower Level" title="Stairs to Lower Level" href="#" coords="445,297,446,317,491,317,490,297" shape="poly">-->
+              <area src="images/O-First-Map-Seven-through-Eleven.png" alt="Elevator to Lower Level" title="Elevator to Lower Level" href="#" coords="307,968,320,967,322,979,307,980" shape="poly">
+              <area src="images/O-First-Map-One-through-Six.png" alt="Elevator to Lower Level" title="Elevator to Lower Level" href="#" coords="414,543,429,541,429,560,414,560" shape="poly">
+            </map>
+            <div style="position: absolute;top: 569px;left: 722px;font-size: 22px;">
+              <div class="menu-item-2" style="" >
+                <img src="images/star.png" width="30"> Upper Level Main Entrance
               </div>
+              <div class="menu-item" style="" src="images/O-First-Map-Seven-through-Eleven.png" title="Elevator to Lower Level">
+                <img src="images/blue-circle.png" width="30"> Elevator
+              </div>
+              <div class="menu-item" src="images/O-Sheriff.png" title="sherif">
+                1 Sheriff
+              </div>
+              <div class="menu-item" src="images/O-Board-Room.png" title="Board Room">
+                2 Board Room
+              </div>
+              <div class="menu-item" src="images/County-Administrator.png" title="County Administrator">
+                3 County Administrator
+              </div>
+              <div class="menu-item" src="images/O-Conference-Room-A.png" title="Conference Room A">
+                4 Conference Room A
+              </div>
+              <div class="menu-item" src="images/O-Conference-Room-B.png" title="Conference Room B">
+                5 Conference Room B
+              </div>
+              <div class="menu-item" src="images/O-Conference-Room-C.png" title="Conference Room C">
+                6 Conference Room C
+              </div>
+              <div class="menu-item" src="images/O-Human-Resources.png" title="Human Resources">
+                7 Human Resources
+              </div>
+              <div class="menu-item" src="images/O-GIS.png" title="GIS">
+                8 GIS
+              </div>
+              <div class="menu-item" src="images/O-IT.png" title="IT">
+                9 IT
+              </div>
+              <div class="menu-item" src="images/O-Conference-Room-D.png" title="Conference Room D">
+                10 Conference Room D
+              </div>
+              <div class="menu-item" src="images/O-Fiscal-Services-Updated.png" title="Fiscal Services">
+                11 Fiscal Services
+              </div>
+              <div class="menu-item" src="images/O-Corporate-Counsel.png" title="Corporate Counsel">
+                12 Corporate Counsel
+              </div>
+              <div class="menu-item" src="images/O-Conference-Room-F.png" title="Conference Room F" >
+                13 Conference Room F 
+              </div>
+              <div class="menu-item" src="images/O-Main-Conference-Room.png" title="Main Conference Room">
+                14 Main Conference Room
+              </div>
+              <div class="menu-item" src="images/O-Innovation-Room.png" title="Innovation Room">
+                15 Innovation Room
+              </div>
+              <div class="menu-item" src="images/O-Planning-&-Performance-Improvement.png" a title="Planning and Performance improvement">
+                16 Planning & Performance <br> Improvement
+              </div>
+              <div class="menu-item" src="images/O-Parks-&-Recreation.png" title="Parks &amp; Recreation">
+                17 Parks & Recreation
+              </div>
+              
+
+
+            </div>
+          </div>
+          <div class="tab-pane" style="text-align: center" id="i02">
+            <!--<img id="img" src="images/lower-level-map.png" onmousedown ="return false" width="1015">-->
+            <img src="images/O-Lower Level-new.png" onmousedown ="return false" width="1015" usemap="#image-map">
+          <map name="image-map">
+              <area src="images/lower-level/O-Water-Resources-Commissioner.png" alt="Water Resources Comissioner" title="Water Resources Comissioner" coords="457,350,511,349,514,311,570,312,570,431,457,431,457,410,466,399,464,392,457,392" shape="poly">
+              <area src="images/lower-level/O-County-Treasurer.png" target="" alt="County Treasure" title="County Treasure"  coords="457,433,571,433,570,549,493,549,491,557,474,556,468,547,457,546" shape="poly">
+              <area src="images/lower-level/o-Register-of-Deeds.png"  target="" alt="Clerk/Register of Deeds" title="Clerk/Register of Deeds"  coords="359,333,438,334,437,536,424,536,423,551,399,551,399,623,321,620,320,545,359,545" shape="poly">
+              <area src="images/lower-level/O-Equalization.png" target="" alt="Equalization/Property" title="Equalization/Property" coords="454,621,542,621,541,741,438,740,437,655,454,655" shape="poly">
+              <area src="images/lower-level/O-MSU-Extension.png" target="" alt="MSU Extension" title="MSU Extension" coords="236,635,320,634,321,623,389,623,389,672,416,672,416,682,421,687,421,724,277,724,277,702,236,702" shape="poly">
+              <area src="images/lower-level/O-Break-Room.png" target="" alt="Break Room" title="Break Room"  coords="235,704,275,702,273,748,273,759,276,765,276,833,267,842,218,843,218,808,202,806,201,766,234,765" shape="poly">
+              <area src="images/lower-level/O-IT-Service-Desk.png" target="" alt="IT Service Desk" title="IT Service Desk" coords="218,857,267,857,277,867,277,950,217,950" shape="poly">
+              <area src="images/lower-level/O-Facilities-Maintenance.png" target="" alt="Facilities Maintenance" title="Facilities Maintenance"  coords="90,817,178,818,178,838,201,839,201,893,216,893,216,951,110,951,110,922,65,921,64,890,91,890" shape="poly">
+              <area src="images/lower-level/O-Emergency-Management.png" target="" alt="Emergency Management" title="Emergency Management"  coords="293,935,303,937,303,943,337,943,338,972,359,972,360,1075,293,1074" shape="poly">
+              <area src="images/lower-level/O-IT-Computer-Training.png" target="" alt="IT Computer Training" title="IT Computer Training" coords="293,863,307,862,308,857,351,858,351,913,307,911,307,904,293,907" shape="poly">
+              <area src="images/lower-level/O-Conference-Room-E.png" target="" alt="Conference Room E" title="Conference Room E" coords="352,858,416,860,414,865,435,863,436,888,403,887,361,930,355,922,352,910" shape="poly">
+              <!--<area src="images/" target="" alt="Elevator to upper level" title="Elevator to upper level" coords="324,932,338,931,337,941,324,941" shape="poly">
+              <area src="images/" target="" alt="Elevator to upper level" title="Elevator to upper level"  coords="424,538,437,539,437,550,424,550" shape="poly">-->
+          </map>
+
+
+          <div style="position: absolute;top: 569px;left: 650px;font-size: 22px;">
+              <div class="menu-item-2" style="" src="" title="">
+                <img src="images/star.png" width="30"> Lower Level Main Entrance
+              </div>
+              <div class="menu-item" style="" src="images/O-First-Map-Seven-through-Eleven.png" title="Elevator to Lower Level">
+                <img src="images/blue-circle.png" width="30"> Elevator
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Water-Resources-Commissioner.png" title="Water Resources Comissioner">
+                1 Water Resources Commissioner
+              </div>
+              <div class="menu-item" src="images/lower-level/O-County-Treasurer.png" title="County Treasure" >
+                2  County Treasurer
+              </div>
+              <div class="menu-item" src="images/lower-level/o-Register-of-Deeds.png" title="Clerk/Register of Deeds">
+                3 Clerk/Register of Deeds
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Equalization.png" title="Equalization/Property">
+                4 Equalization / Property...
+              </div>
+              <div class="menu-item" src="images/lower-level/O-MSU-Extension.png" title="MSU Extension">
+                5 MSU Extension
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Break-Room.png" title="Break Room">
+                6 Break Room
+              </div>
+              <div class="menu-item" src="images/lower-level/O-IT-Service-Desk.png" title="IT Service Desk">
+                7 IT Service Desk
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Facilities-Maintenance.png" title="Facilities Maintenance">
+                8 Facilities Maintenance
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Emergency-Management.png" title="Emergency Management">
+                9 Emergency Management
+              </div>
+              <div class="menu-item" src="images/lower-level/O-IT-Computer-Training.png" title="IT Computer Training">
+                10 IT Computer Training
+              </div>
+              <div class="menu-item" src="images/lower-level/O-Conference-Room-E.png" title="Conference Room E">
+                11 Conference Room E
+              </div>
+
+            </div>
+
+            
+        </div>              
+      </div>
+      
+        
       </div>
 
-</section>
+      <!--<div class="map-content" id="upper-level">
+        <div class="col-sm-6">
+          <ul>
+            <li><img src="images/star.png" width="30">Upper Level Main Entrance</li> 
+            <li><img src="images/blue-circle.png" width="30">Elevator</li>
+            <li>1 Sherif </li>
+            <li>2 Board Room </li>
+            <li>3 County Administrator</li> 
+            <li>4 Conference Room A </li>
+            <li>5 Conference Room B </li>
+            <li>6 Conference Room C </li>
+            <li>7 Interview Room </li>
+            <li>8 HR Conference Room </li>
+            <li>9 Interview Room </li>
+          </ul>
+        </div>
+        <div class="col-sm-6" >
+          <ul>            
+            <li>10 Human Resources</li> 
+            <li>11 GIS </li>
+            <li>12 IT</li>
+            <li>13 Conference Room D</li>
+            <li>14 Fiscal Services</li>
+            <li>15 Corporate Counsel</li>
+            <li>16 Conference Room F </li>
+            <li>17 Main Conference Room</li>
+            <li>18 Innovation Room</li>
+            <li>19 Planning & Performance Improvement</li>
+            <li>20 Parks & Rec</li>
+            
+          </ul>
+        </div>      
+      </div>
+
+      <div class="map-content" id="lower-level" style="height:415px;display: none;">
+        <div class="col-sm-6">
+          <ul>
+            <li><img src="images/star.png" width="30">Lower Level Main Entrance </li> 
+            <li><img src="images/blue-circle.png" width="30">Elevator</li>
+            <li>1 Water Resource Commissioner </li>
+            <li>2 County Treasurer </li>
+            <li>3 Clerk / Register of Deeds </li> 
+            <li>4 Equilization / Property </li>
+            <li>5 MSU Extension</li>
+            
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            <li>6 Break Room</li>
+            <li>7 IT Service Desk</li>
+            <li>8 Facilities Manager</li>
+            <li>9 Emergency Management</li>         
+            <li>10 IT Computer Training</li> 
+            <li>11 Conference Room E </li>
+          </ul>
+        </div>      
+      </div>-->
+
+    </div>
+  </section>
 
 
 <footer>
 
-   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner " id="slide" role="listbox">
-
-          <div class="item active">
-            <img class="fixed-height" src="../../images/slider/1.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="../../images/slider/3.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="../../images/slider/4.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-       
-
-        </div>   
-    </div>
-
-    <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">
-</footer>
+   
+    </footer>
 <div id="dialog-overlay"></div>
       <div id="dialog-box">
 
       </div>
-
+<style type="text/css">
+  .menu-item, .menu-item-2{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;background-color: #bee6f0;
+    /*height: 50px;*/
+    margin-bottom: 10px; 
+    text-align: left;
+  }
+</style>
 </body>
+
 <script type="application/javascript">
-    if(readCookie("CurrentLanguage") === "English")
-    {
-        LanguageChange('english');
-    }
-    else if(readCookie("CurrentLanguage") === "Spanish")
-    {
-        LanguageChange('spanish');
-    }
+
 </script>
 
-<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/map.js"></script>
 <script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
 
 <script language="javascript" type="text/javascript">
     window.history.forward();
 </script>
+
+<script
+
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+<script src="../../Scripts/aws-lex-audio.js" type="text/javascript"></script>
+<script src="../../renderer.js" type="text/javascript"></script>
+<script src="../../Scripts/aes.js"></script>
+<script src="../../Scripts/lex.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
 
 

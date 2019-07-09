@@ -4,7 +4,7 @@
 var speak = new Array( );
 
 
-function LanguageChange(lang)
+/*function LanguageChange(lang)
 {
     if(lang === "english")
     {
@@ -88,7 +88,13 @@ function LanguageChange(lang)
         speak[5] = "Check in here.";
     }
 
-}
+}*/
+    speak[0] = "";
+    speak[1] = "Use your cell phone camera to scan the QR code, this way the map will go right to your phone.";
+    speak[2] = "Please touch the screen to scroll through frequently asked questions.";
+    speak[3] = "Click on a Department for map and directions.";
+    speak[4] = "Press the below button to alert the County Clerk that you are on the way.";
+    speak[5] = "";
 
 function FC_ContentsCall(strContentsName, strLanguage)
 {
@@ -97,39 +103,39 @@ function FC_ContentsCall(strContentsName, strLanguage)
     switch (strContentsName)
     {
         case "Home":
-           location.href = "../../maincontents.htm";
+           location.href = "../../main.htm";
             break;
         case "ServiceCenter":
-            PlaySpeech(speak[0]);
+           // PlaySpeech(speak[0]);
            location.href = "Contents/ServiceCenter/index.html";
             break;
         case "Maps":
-            PlaySpeech(speak[1]);
-           location.href = "Contents/Maps/index.html";
+            //PlaySpeech(speak[1]);
+            location.href = "Contents/Maps/index.html";
             break;
         case "Info":
-            PlaySpeech(speak[2]);
-           location.href = "Contents/Info/index.html";
+            //PlaySpeech(speak[2]);
+            location.href = "Contents/Info/index.html";
             break;
         case "Departments":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
            location.href = "Contents/Departments/index.html";
             break;
         case "Employment":
-           PlaySpeech(speak[4]);
+           //PlaySpeech(speak[4]);
            location.href = "Contents/Employment/index.html";
             break;
         case "checkin":
-            PlaySpeech(speak[5]);
-           location.href = "Contents/checkin/index.php";
+            //PlaySpeech(speak[4]);
+            location.href = "Contents/checkin/index.html";
             break;
 
         case "Selfie":
-            PlaySpeech(speak[2]);
+            //PlaySpeech(speak[2]);
             location.href = "Contents/Selfie/index.html";
             break;
         case "Avatar":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
 
@@ -144,7 +150,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 
 function OnUserApproached()
 {
-    PlaySpeech("Hi, I'm Erin, thanks for traveling with us.  To get started, please press a button below.");
+    //PlaySpeech("Hi, I'm Erin, thanks for traveling with us.  To get started, please press a button below.");
 }
 
 
@@ -163,42 +169,84 @@ function ShowPopup(){
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="assets/contact.png"/></div></div>';
 }
 
+function ShowPopupMap(type){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+    switch (type) {
+        case 1:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:2px;right: 20px;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Treasurer s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-County Treasurer.png"/></div></div><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap(2)" >Sherrif s Office</p>';
+            break;
+        case 2:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:2px;right: 20px;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Sherrif s Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Sheriff.png"/></div></div><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap(1)" >Treasurer s Office</p>';
+            break;
+        case 3:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:2px;right: 20px;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Clerks Office</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/o-Register of Deeds.png"/></div></div><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >NA</p>';
+            break;
+        case 4:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:2px;right: 20px;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Fiscal Services</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Fiscal Services Updated .png"/></div></div><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >NA</p>';
+            break;
+        case 5:
+            document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:2px;right: 20px;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Human Resources</p><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/maps/O-Human Resources.png"/></div></div><p style="color:black;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;">Looking for something else?</p><p style="color:blue;text-align: left;font-size: 25px;padding-top:10px; margin-left: 20px;" onclick="ShowPopupMap()" >NA</p>';
+            break;
+
+
+    }
+
+    //document.getElementById('dialog-box').innerHTML = '<a href="#" style="float: right;position:absolute;top:30px;right:0;" class="button" onclick="closePopup()">Close</a><p style="color:black;text-align: center;font-size: 25px;padding-top:10px;">Looking for something else?</p><a href="#" onclick="" class="search">SEARCH</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+}
+function closePopup(){
+  document.getElementById('dialog-overlay').style.display="none";
+  document.getElementById('dialog-box').style.display="none";
+}
 $(document).ready(function(){
 
-
-
-    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
+    $('a.button').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
         return false;
     });
-})
+    $('a.search').click(function () {
+        window.location = "http://localhost:3000/Contents/Info/index.html";
+    });
+    var doubleTouchStartTimestamp = 0;
+$(document).bind("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now){
+        event.preventDefault();
+    }
+    doubleTouchStartTimestamp = now;
+});
+});
 
 
 setTimeout(function () {
     ShowTime();
     console.log("Time Showed");
 
-    var city = "Ottawa, IL, USA";
-    var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'";
-    var queryURL = "https://query.yahooapis.com/v1/public/yql?q="+ searchtext + "&format=json";
+    var city = "Ottawa, US";
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a";
 
     $.getJSON(queryURL, function (data) {
 
-        var results = data.query.results;
-        var firstResult = results.channel.item.condition;
-        console.log(firstResult);
+        //var temp = data.main.temp;
+        var temp = Math.round(data.main.temp-273);
+        //var temp=Math.round((temp * (9/5)) + 32);
+        
+        var condition = data.weather[0].main;
+        var loc = 'http://openweathermap.org/img/w/'+ data.weather[0].icon  + '.png' ;
 
+        //$('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+condition);
 
-        var location = 'Unknown'; // not returned in response
-        var temp = firstResult.temp;
-        var text = firstResult.text;
-        var image =  firstResult.code;
-        var loc = 'https://s.yimg.com/zz/combo?a/i/us/we/52/'+image+'.gif' ;
-
-        // $('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+text);
-
-        $('#condition').append(text);
-        $('#temp').append(temp+ '</strong><sup>°F</sup>');
+        $('#condition').text(condition);
+        $('#temp').append(temp + '</strong><sup>°</sup>');
 
         $('#image-zoom').attr("src",loc);
 
@@ -214,7 +262,7 @@ setTimeout(function () {
 function ShowTime()
 {
     var dt = new Date();
-    // formatAMPM(dt);
+    formatAMPM(dt);
     document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
     document.getElementById("content_date") .innerHTML = formatDate(dt);
 
@@ -244,11 +292,12 @@ function formatDate(date){
 
     var m_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    var month = m_names[date.getMonth()];
+    //var month = m_names[date.getMonth()];
+    var month = date.getMonth()+1;
     var day = date.getDate();
-    day = getGetOrdinal(day);
+    //day = getGetOrdinal(day);
 
-    var output = (month<10 ? '0' : '') + month + ' ' +(day<10 ? '0' : '') + day+', '+ date.getFullYear() ;
+    var output = (month<10 ? '0' : '') + month + '/' +(day<10 ? '0' : '') + day+'/'+ date.getFullYear() ;
     return output;
 }
 
@@ -263,9 +312,73 @@ function OnJoystickControlled(strPara){
 
 
     if(btn_info[0] == '1'){
-
-            window.external.PlaySpeech("Hello, welcome to the Ottawa County Admin Building. Press a button on my screen to begin");
-
+            window.external.PlaySpeech("Need help finding your way? I can help.  Come here and press the buttons on my screen.");
     }
 
+    if(btn_info[1] == '1'){
+            window.external.PlaySpeech("With your phone, take a picture of the map, this way you’ll have the directions on your phone.");
+    }
+
+    if(btn_info[2] == '1'){
+            window.external.PlaySpeech("");
+    }
+
+    if(btn_info[3] == '1'){
+            window.external.PlaySpeech("Bye, bye.");
+    }
+
+}
+
+
+//Create an account on Firebase, and use the credentials they give you in place of the following
+var firebaseConfig = {
+    apiKey: "AIzaSyBXzcGDkfDK1Pd9IK2SrULFylzdOF6QBkU",
+    authDomain: "websitebeaver-6d9c7.firebaseapp.com",
+    databaseURL: "https://websitebeaver-6d9c7.firebaseio.com",
+    projectId: "websitebeaver-6d9c7",
+    storageBucket: "websitebeaver-6d9c7.appspot.com",
+    messagingSenderId: "1060779787413",
+    appId: "1:1060779787413:web:62cfd5773721b0df"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database().ref();
+var yourVideo = document.getElementById("yourVideo");
+var friendsVideo = document.getElementById("friendsVideo");
+var yourId = Math.floor(Math.random()*1000000000);
+//Create an account on Viagenie (http://numb.viagenie.ca/), and replace {'urls': 'turn:numb.viagenie.ca','credential': 'websitebeaver','username': 'websitebeaver@email.com'} with the information from your account
+var servers = {'iceServers': [{'urls': 'stun:stun.services.mozilla.com'}, {'urls': 'stun:stun.l.google.com:19302'}, {'urls': 'turn:numb.viagenie.ca','credential': 'beaver','username': 'webrtc.websitebeaver@gmail.com'}]};
+var pc = new RTCPeerConnection(servers);
+pc.onicecandidate = (event => event.candidate?sendMessage(yourId, JSON.stringify({'ice': event.candidate})):console.log("Sent All Ice") );
+pc.onaddstream = (event => friendsVideo.srcObject = event.stream);
+
+function sendMessage() {
+    var msg = database.push("hello");
+    msg.remove();
+}
+
+function readMessage(data) {
+
+    //alert(data.val().message);
+    PlaySpeech(data.val().message);
+    //document.getElementById("speak").innerHTML = data.val().message;
+    console.log("Message is: " + data.val().message);
+
+
+
+}
+
+database.on('child_added', readMessage);
+
+function showMyFace() {
+    navigator.mediaDevices.getUserMedia({audio:true, video:true})
+        .then(stream => yourVideo.srcObject = stream)
+        .then(stream => pc.addStream(stream));
+}
+
+function showFriendsFace() {
+    pc.createOffer()
+        .then(offer => pc.setLocalDescription(offer) )
+        .then(() => sendMessage(yourId, JSON.stringify({'sdp': pc.localDescription})) );
 }

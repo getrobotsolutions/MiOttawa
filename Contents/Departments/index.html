@@ -10,136 +10,214 @@
     <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
     <script src="../../boots/js/bootstrap.min.js"></script> 
     
 
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
-  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <link href="css/department.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../style.css">
+  <script>
+      dataKey = -1;
+      console.log("sending Key:" + dataKey);
+
+      $.ajax({
+          type: "GET",
+          data: { key: dataKey},
+          url: "/api/sendresponse"
+      });
+      PlaySpeech("Click on a Department for map and directions.");
+  </script>
 
 
 </head>
-
-
-<body >
-
-<header >
+<body ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+  <header >
     <div class="logo">
         <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
     </div>
-    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
-        <div id= 'appcity'>San Antonio, TX</div>
-          <div id="content_air">San Antonio, TX</div>
-          <div id="content_date" ></div>
-          <span id="condition"></span>
-        <div>
-            <img id ="image-zoom" style="width: 50px" src="">
-             <span id="temp" ></span>
-        </div>
-        
-    </span>
-</header>
-
-<nav>
-    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
-    <div class="nav-language">
-        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
-        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
-        <button onclick="LanguageChange('chinese');" id="btn_chinese" class="btn-spanish">中文</button>
+    <div class="audio-control">
+     <p id="audio-control" class="white-circle">
+        <img src="../../assets/icons/microphone.png">
+        <canvas class="visualizer" style="width: 880px !important; margin-left: 200px !important;"></canvas>
+      </p>
+      <p style="margin-top: -75px; width: 200px"><span id="message" style="color: white; font-size: x-large"></span></p>
+      <p>
+        <!--     <input type="password" id="ACCESS_ID" name="ACCESS ID" placeholder="ACCESS ID" value=""/>
+         </p>
+         <p>
+             <input type="password" id="SECRET_KEY" name="SECRET KEY" placeholder="SECRET KEY" value=""/>
+         </p>
+         <p>
+             <input type="text" id="BOT" name="BOT" placeholder="BOT" value=""/>
+        <input id="txtKey" type="text" value="" style="width: 100px;"/> -->
+      </p>
     </div>
-</nav>
+  </header>
 
-<section class="main-content">
-   <div class="bmg">
-    <img src="img.jpeg" width="1080">            <!--<div class="wrap" >
-               <div class="col-sm-5">
-                  <div class="part1" style="">
-                    <div id="leftmenu" >
+  <nav>
+    <div class="dateTime">
+      <span id="content_date"></span>
+      <span id="content_air"></span> | <span id="temp"></span>
+      <img src="" id="image-zoom">
+    </div>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span> 
+  </nav>
 
-                      <h3 id="restau">Restaurants</h3>
-                        <img class="eat-icon" src="images/eat-icon.png">
-
-
-                       <ul id="dynamic-list" class = "listul"></ul>
-
-                    </div>
-                  </div>
-                </div>
-
-               <div class="col-sm-6">
-                  <div class="part2" id="content">
-                    
-                      <div class="restau-image">
-                        <img id="icon" src="images/default.png" class="icon">
-                      </div>
-                      <div class="bdy">
-                      <div id ="desc">
-                         <p id="HotelName" style="font-weight: bold"> </p>
-                        
-                         <p id="HotelDesc"> </p>
-                      </div>
-
-                        <button type="button" id="mapBtn" class="btn btn-offer" dir="images/offers/404.png" style="visibility: hidden">OFFERS</button>
-                      </div>
-
-                  </div>
-               </div>
-              </div>-->
+  <section class="main-content">
+    <div class="bmg">
+      <div class="department-box" name="images/County-Administrator.png">
+        <div class="department-title">Administrator's Office</div> 
       </div>
 
-</section>
+      <div class="department-box" name="images/O-Board-Room.png">
+        <div class="department-title">Board of Commissioners</div> 
+      </div>
 
+      <div class="department-box" name="images/O-Corporate-Counsel.png">
+        <div class="department-title">Corporate Counsel</div> 
+      </div>
 
-<footer>
+      <div class="department-box" name="images/lower-level/o-Register-of-Deeds.png">
+        <div class="department-title">County Clerk/Register's Office</div> 
+      </div>
 
-   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
-          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
-        </ol>
+      <div class="department-box" name="images/lower-level/O-Emergency-Management.png">
+        <div class="department-title">Emergency Management</div> 
+      </div>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner " id="slide" role="listbox">
+      <div class="department-box" name="images/lower-level/O-Equalization.png">
+        <div class="department-title">Equalization/Property Mapping</div> 
+      </div>
 
-          <div class="item active">
-            <img class="fixed-height" src="../../images/slider/1.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="item ">
-            <img class="fixed-height" src="../../images/slider/3.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          
-       
+      <div class="department-box"  name="images/lower-level/O-Facilities-Maintenance.png">
+        <div class="department-title">Facilities/Maintanence</div> 
+      </div>
 
-        </div>   
+      <div class="department-box"  name="images/O-Fiscal-Services-Updated.png">
+        <div class="department-title">Fiscal Services</div> 
+      </div>
+
+      <div class="department-box" name="images/O-Human-Resources.png">
+        <div class="department-title">Human Resources</div> 
+      </div>
+
+      <div class="department-box" name="images/O-IT.png">
+        <div class="department-title">IT - Innovation and Technology</div> 
+      </div>
+
+      <div class="department-box" name="images/lower-level/O-MSU-Extension.png">
+        <div class="department-title">Michigan State University (MSU) Extension</div> 
+      </div>
+
+      <div class="department-box" name="images/O-Parks-&-Recreation.png">
+        <div class="department-title">Parks & Recreation</div> 
+      </div>
+
+      <div class="department-box" name="images/O-Planning-&-Performance-Improvement.png">
+        <div class="department-title">Planning & Performance Improvement</div> 
+      </div>
+
+      <div class="department-box" name="images/O-Sheriff.png">
+        <div class="department-title">Sheriff's Office</div> 
+      </div>
+
+      <div class="department-box" name="images/lower-level/O-County-Treasurer.png">
+        <div class="department-title">Treasurer's Office</div> 
+      </div>
+
+      <div class="department-box" name="images/lower-level/O-Water-Resources-Commissioner.png">
+        <div class="department-title">Water Resources Commissioner's Office</div> 
+      </div>
+
+      <!--<div class="department-box" onclick="location.href='admin.html';">
+        <div class="department-title">Administrator's Office</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='boc.html'">
+        <div class="department-title">Board of Commissioners</div> 
+      </div>
+
+      <div class="department-box">
+        <div class="department-title">Corporate Counsel</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='CountyClerk.html'">
+        <div class="department-title">County Clerk/Register's Office</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='emergency.html'">
+        <div class="department-title">Emergency Management</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Equalization.html'">
+        <div class="department-title">Equalization/Property Mapping</div> 
+      </div>
+
+      <div class="department-box"  onclick="location.href='Facilities.html'">
+        <div class="department-title">Facilities/Maintanence</div> 
+      </div>
+
+      <div class="department-box"  onclick="location.href='FiscalServices.html'">
+        <div class="department-title">Fiscal Services</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='HR.html'">
+        <div class="department-title">Human Resources</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='IT.html'">
+        <div class="department-title">IT - Innovation and Technology</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='MSU.html'">
+        <div class="department-title">Michigan State University (MSU) Extension</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Parks.html'">
+        <div class="department-title">Parks & Recreation</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Planning.html'">
+        <div class="department-title">Planning & Performance Improvement</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Sheriff.html'">
+        <div class="department-title">Sheriff's Office</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Treasurer.html'">
+        <div class="department-title">Treasurer's Office</div> 
+      </div>
+
+      <div class="department-box" onclick="location.href='Drain.html'">
+        <div class="department-title">Water Resources Commissioner's Office</div> 
+      </div>-->
+    
     </div>
 
-    <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">
-</footer>
-<div id="dialog-overlay"></div>
-      <div id="dialog-box">
+  </section>
 
-      </div>
+
+  <footer>
+
+  </footer>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+
+  <script
+
+          src="https://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+  <script src="../../Scripts/aws-lex-audio.js" type="text/javascript"></script>
+  <script src="../../renderer.js" type="text/javascript"></script>
+  <script src="../../Scripts/aes.js"></script>
+  <script src="../../Scripts/lex.js"></script>
 
 </body>
 <script type="application/javascript">
@@ -153,12 +231,13 @@
     }
 </script>
 
-<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/department.js"></script>
 <script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
 
 <script language="javascript" type="text/javascript">
-    window.history.forward();
+    //window.history.forward();
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
 
 
