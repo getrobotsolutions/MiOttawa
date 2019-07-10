@@ -208,6 +208,8 @@ function closePopup(){
   document.getElementById('dialog-box').style.display="none";
 }
 $(document).ready(function(){
+    ShowTime();
+    showWeather();
 
     $('a.button').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
@@ -227,10 +229,10 @@ $(document).bind("touchstart", function(event){
 });
 
 
-setTimeout(function () {
-    ShowTime();
-    console.log("Time Showed");
-
+//setTimeout(function () {
+    //ShowTime();
+   // console.log("Time Showed");
+function showWeather(){
     var city = "Ottawa, US";
     var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a";
 
@@ -254,15 +256,16 @@ setTimeout(function () {
     });
 
 
-
-}, 1000);
-
-
-
+}
+//}, 1000);
+setInterval(function () {
+      //alert();
+      ShowTime()
+    },10000);
 function ShowTime()
 {
     var dt = new Date();
-    formatAMPM(dt);
+    //formatAMPM(dt);
     document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;
     document.getElementById("content_date") .innerHTML = formatDate(dt);
 
@@ -300,6 +303,8 @@ function formatDate(date){
     var output = (month<10 ? '0' : '') + month + '/' +(day<10 ? '0' : '') + day+'/'+ date.getFullYear() ;
     return output;
 }
+
+
 
 function getGetOrdinal(n) {
     var s=["th","st","nd","rd"],
