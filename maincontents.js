@@ -233,13 +233,14 @@ $(document).bind("touchstart", function(event){
     //ShowTime();
    // console.log("Time Showed");
 function showWeather(){
-    var city = "Ottawa, US";
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a";
+    var city = "Ottawa County, US";
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d6ca94c15ab17256de7e07c8f5395f4a&units=imperial";
 
     $.getJSON(queryURL, function (data) {
 
-        //var temp = data.main.temp;
-        var temp = Math.round(data.main.temp-273);
+        var temp = data.main.temp;
+        temp = Math.round(data.main.temp);
+        //var temp = Math.round(data.main.temp-273);
         //var temp=Math.round((temp * (9/5)) + 32);
         
         var condition = data.weather[0].main;
@@ -248,7 +249,7 @@ function showWeather(){
         //$('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+condition);
 
         $('#condition').text(condition);
-        $('#temp').append(temp + '</strong><sup>°</sup>');
+        $('#temp').append(temp + '</strong><sup>°F</sup>');
 
         $('#image-zoom').attr("src",loc);
 
